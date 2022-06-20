@@ -1,36 +1,43 @@
-# Airflow demo: Using the DockerOperator with Docker Compose
+# Data Engineering Task: Using the Airflow and DBT with Docker Compose
 
-Most of tutorials just explains how to use the [Airflow DockerOperator](https://airflow.apache.org/docs/apache-airflow-providers-docker/stable/_api/airflow/providers/docker/operators/docker/index.html) using the bare metal installation; and here we will use it with [Airflow on top of Docker Compose](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html).
+This solution tends to implement data modeling using dbt and airflow.
 
 ## Authors
 
-- [@fclesio](https://www.github.com/fclesio)
+- [@psalmprax](https://www.github.com/psalmprax)
 
 ## Setup
-1) First create a container with the webservice and create the `airflow` user, [as described in the official docs](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html):
+1) To setup the project, use need to install docker and docker-compose in your virtual machine :
 
 ```bash
-$ docker-compose up airflow-init
+$ docker-compose up --build -d
 ```
 
-or execute the following script below:
+2) Before running the jobs, the source database and the target database must be setup in the airflow connection ui
+using the postgres provider
+
 ```bash
-$ bash bin/initial_setup.sh
+Connection Id: target	
+Connection Type: Postgres
+Host: postgres_target
+Schema: target	
+Login: target
+Password: target
+Port: 5432
 ```
-
-2) With this initial setup made, start the webservice and other components via `docker-compose`, 
-
 ```bash
-$ docker build -f dags/docker_job/Dockerfile -t docker_image_task . && \
-docker-compose up -d
+Connection Id: source	
+Connection Type: Postgres
+Host: postgres_source
+Schema: source	
+Login: source
+Password: source
+Port: 5432
 ```
-
-or execute the following script below that will do the same thing:
+3) The Airflow dag has 4 jobs. Run the job in the order that they are listed below
 ```bash
-$ bash bin/start.sh
-```
-
-3) Finally when you're done with your experiment, stop all containers running the following command:
-```bash
-$  bash bin/stop.sh
+- T-dbt-job-cdc_load
+- T-dbt-job-objects 
+- T-dbt-job-dimensions
+- T-dbt-job-facts
 ```
