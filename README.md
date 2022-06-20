@@ -14,7 +14,7 @@ $ docker-compose up --build -d
 ```
 
 2) Before running the jobs, the source database and the target database must be setup in the airflow connection ui
-using the postgres provider
+using the postgres provider. The ``` dags and the dbt folder ``` are where the ingestion and transformation pipefile recide
 
 ```bash
 $	Connection Id: target	
