@@ -1,0 +1,90 @@
+[2022-06-19 17:55:53,875] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-pts.pts-Papple-iphone-xs-max-256gb-space-grau_h_6254 scheduled__2022-06-19T01:09:09.446748+00:00 [queued]>
+[2022-06-19 17:55:53,888] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-pts.pts-Papple-iphone-xs-max-256gb-space-grau_h_6254 scheduled__2022-06-19T01:09:09.446748+00:00 [queued]>
+[2022-06-19 17:55:53,888] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 17:55:53,888] {taskinstance.py:1357} INFO - Starting attempt 2 of 6
+[2022-06-19 17:55:53,888] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 17:55:54,222] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): pts-Papple-iphone-xs-max-256gb-space-grau_h_6254> on 2022-06-19 01:09:09.446748+00:00
+[2022-06-19 17:55:54,466] {standard_task_runner.py:52} INFO - Started process 1744 to run task
+[2022-06-19 17:55:54,471] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-pts', 'pts-Papple-iphone-xs-max-256gb-space-grau_h_6254', 'scheduled__2022-06-19T01:09:09.446748+00:00', '--job-id', '593', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_scale.py', '--cfg-path', '/tmp/tmp76k3ipij', '--error-file', '/tmp/tmp92meenx9']
+[2022-06-19 17:55:54,472] {standard_task_runner.py:80} INFO - Job 593: Subtask pts-Papple-iphone-xs-max-256gb-space-grau_h_6254
+[2022-06-19 17:55:54,672] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-19 17:55:55,956] {task_command.py:370} INFO - Running <TaskInstance: Job-pts.pts-Papple-iphone-xs-max-256gb-space-grau_h_6254 scheduled__2022-06-19T01:09:09.446748+00:00 [running]> on host 3c1ac2e19971
+[2022-06-19 17:56:06,906] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-pts
+AIRFLOW_CTX_TASK_ID=pts-Papple-iphone-xs-max-256gb-space-grau_h_6254
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-19T01:09:09.446748+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-19T01:09:09.446748+00:00
+[2022-06-19 17:58:47,958] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 115, in test
+    ppd = ProductPriceData(driver=webdriver.Chrome(executable_path="dags/docker_job/chromedriver", options=options))
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    service_log_path, service, keep_alive)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chromium/webdriver.py", line 98, in __init__
+    options=options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 275, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 365, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+Stacktrace:
+#0 0x56339ddcbf33 <unknown>
+#1 0x56339db16118 <unknown>
+#2 0x56339db3c282 <unknown>
+#3 0x56339db387c6 <unknown>
+#4 0x56339db34d5a <unknown>
+#5 0x56339db6fd3a <unknown>
+#6 0x56339db69e63 <unknown>
+#7 0x56339db3f82a <unknown>
+#8 0x56339db40985 <unknown>
+#9 0x56339de104cd <unknown>
+#10 0x56339de145ec <unknown>
+#11 0x56339ddfa71e <unknown>
+#12 0x56339de15238 <unknown>
+#13 0x56339ddef870 <unknown>
+#14 0x56339de31608 <unknown>
+#15 0x56339de31788 <unknown>
+#16 0x56339de4bf1d <unknown>
+#17 0x7f2ab056bea7 <unknown>
+
+[2022-06-19 17:58:48,179] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=Job-pts, task_id=pts-Papple-iphone-xs-max-256gb-space-grau_h_6254, execution_date=20220619T010909, start_date=20220619T175553, end_date=20220619T175848
+[2022-06-19 17:58:48,304] {local_task_job.py:221} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2022-06-19 17:58:48,310] {standard_task_runner.py:97} ERROR - Failed to execute job 593 for task pts-Papple-iphone-xs-max-256gb-space-grau_h_6254 (Message: unknown error: DevToolsActivePort file doesn't exist
+Stacktrace:
+#0 0x56339ddcbf33 <unknown>
+#1 0x56339db16118 <unknown>
+#2 0x56339db3c282 <unknown>
+#3 0x56339db387c6 <unknown>
+#4 0x56339db34d5a <unknown>
+#5 0x56339db6fd3a <unknown>
+#6 0x56339db69e63 <unknown>
+#7 0x56339db3f82a <unknown>
+#8 0x56339db40985 <unknown>
+#9 0x56339de104cd <unknown>
+#10 0x56339de145ec <unknown>
+#11 0x56339ddfa71e <unknown>
+#12 0x56339de15238 <unknown>
+#13 0x56339ddef870 <unknown>
+#14 0x56339de31608 <unknown>
+#15 0x56339de31788 <unknown>
+#16 0x56339de4bf1d <unknown>
+#17 0x7f2ab056bea7 <unknown>
+; 1744)
+[2022-06-19 17:58:48,429] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 1744. PIDs of all processes in the group: [1744]
+[2022-06-19 17:58:48,473] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 1744
+[2022-06-19 17:58:48,473] {process_utils.py:75} INFO - Process psutil.Process(pid=1744, status='terminated', exitcode=1, started='17:55:54') (1744) terminated with exit code 1

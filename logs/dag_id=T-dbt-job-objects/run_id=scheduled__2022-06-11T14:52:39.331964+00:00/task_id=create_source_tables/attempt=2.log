@@ -1,0 +1,118 @@
+[2022-06-11 17:08:41,805] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-objects.create_source_tables scheduled__2022-06-11T14:52:39.331964+00:00 [queued]>
+[2022-06-11 17:08:41,816] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-objects.create_source_tables scheduled__2022-06-11T14:52:39.331964+00:00 [queued]>
+[2022-06-11 17:08:41,816] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-11 17:08:41,816] {taskinstance.py:1357} INFO - Starting attempt 2 of 3
+[2022-06-11 17:08:41,816] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-11 17:08:41,832] {taskinstance.py:1377} INFO - Executing <Task(PostgresOperator): create_source_tables> on 2022-06-11 14:52:39.331964+00:00
+[2022-06-11 17:08:41,837] {standard_task_runner.py:52} INFO - Started process 625 to run task
+[2022-06-11 17:08:41,841] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'T-dbt-job-objects', 'create_***_tables', 'scheduled__2022-06-11T14:52:39.331964+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/dbt_test.py', '--cfg-path', '/tmp/tmpwe_1qtqo', '--error-file', '/tmp/tmpg0c3v6do']
+[2022-06-11 17:08:41,841] {standard_task_runner.py:80} INFO - Job 43: Subtask create_***_tables
+[2022-06-11 17:08:41,854] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-11 17:08:41,891] {task_command.py:370} INFO - Running <TaskInstance: T-dbt-job-objects.create_source_tables scheduled__2022-06-11T14:52:39.331964+00:00 [running]> on host d8836eb746ac
+[2022-06-11 17:08:41,954] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuelolle@yahoo.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=T-dbt-job-objects
+AIRFLOW_CTX_TASK_ID=create_***_tables
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-11T14:52:39.331964+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-11T14:52:39.331964+00:00
+[2022-06-11 17:08:41,964] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-11 17:08:41,968] {dbapi.py:213} INFO - Running statement: CREATE SCHEMA IF NOT EXISTS analytics_object;
+
+CREATE TABLE IF NOT EXISTS analytics_object.users (
+    id serial,
+    name TEXT NOT NULL UNIQUE,
+    visitor_ind bigint,
+    created_at TIMESTAMP,
+    user_segment TEXT,
+    event_type TEXT,
+    event_time TIMESTAMP,
+    export_date TIMESTAMP,
+    PRIMARY KEY (id)
+);
+
+
+CREATE TABLE IF NOT EXISTS analytics_object.walls (
+    id serial,
+    name VARCHAR (255) NOT NULL,
+    owner VARCHAR (255) NOT NULL,
+    created_at TIMESTAMP,
+    event_type TEXT,
+    event_time TIMESTAMP,
+    export_date TIMESTAMP,
+    PRIMARY KEY (id),
+    CONSTRAINT fk_users_walls
+          FOREIGN KEY(owner)
+          REFERENCES analytics_object.users(name)
+);
+
+CREATE TABLE IF NOT EXISTS analytics_object.posts (
+    id serial,
+    name VARCHAR (255) NOT NULL,
+    content TEXT,
+    wall bigint,
+    author TEXT,
+    created_at TIMESTAMP,
+    PRIMARY KEY (id),
+    CONSTRAINT fk_walls_posts
+         FOREIGN KEY(wall)
+         REFERENCES analytics_object.walls(id),
+    CONSTRAINT fk_users_posts
+         FOREIGN KEY(author)
+         REFERENCES analytics_object.users(name)
+);
+
+CREATE TABLE IF NOT EXISTS analytics_object.comments (
+    id serial,
+    text TEXT,
+    post bigint,
+    author TEXT,
+    created_at TIMESTAMP,
+    PRIMARY KEY (id),
+    CONSTRAINT fk_posts_comments
+         FOREIGN KEY(post)
+         REFERENCES analytics_object.posts(id),
+    CONSTRAINT fk_users_comments
+         FOREIGN KEY(author)
+         REFERENCES analytics_object.users(name)
+);
+
+
+CREATE TABLE IF NOT EXISTS analytics_object.likes (
+    id serial,
+    like_notlike_ind bigint,
+    post bigint,
+    comment bigint,
+    author TEXT,
+    created_at TIMESTAMP,
+    PRIMARY KEY (id),
+    CONSTRAINT fk_posts_likes
+         FOREIGN KEY(post)
+         REFERENCES analytics_object.posts(id),
+    CONSTRAINT fk_users_likes
+         FOREIGN KEY(author)
+         REFERENCES analytics_object.users(name),
+    CONSTRAINT fk_comments_likes
+         FOREIGN KEY(comment)
+         REFERENCES analytics_object.comments(id)
+);, parameters: None
+[2022-06-11 17:08:41,969] {postgres.py:94} INFO - NOTICE:  schema "analytics_object" already exists, skipping
+
+[2022-06-11 17:08:41,969] {postgres.py:94} INFO - NOTICE:  relation "users" already exists, skipping
+
+[2022-06-11 17:08:41,969] {postgres.py:94} INFO - NOTICE:  relation "walls" already exists, skipping
+
+[2022-06-11 17:08:41,969] {postgres.py:94} INFO - NOTICE:  relation "posts" already exists, skipping
+
+[2022-06-11 17:08:41,969] {postgres.py:94} INFO - NOTICE:  relation "comments" already exists, skipping
+
+[2022-06-11 17:08:41,969] {postgres.py:94} INFO - NOTICE:  relation "likes" already exists, skipping
+
+[2022-06-11 17:08:41,981] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=T-dbt-job-objects, task_id=create_***_tables, execution_date=20220611T145239, start_date=20220611T170841, end_date=20220611T170841
+[2022-06-11 17:08:42,013] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-11 17:08:42,052] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

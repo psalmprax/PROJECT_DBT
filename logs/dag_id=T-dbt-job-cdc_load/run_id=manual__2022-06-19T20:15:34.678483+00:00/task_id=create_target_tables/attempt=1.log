@@ -1,0 +1,90 @@
+[2022-06-19 20:15:35,919] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-cdc_load.create_target_tables manual__2022-06-19T20:15:34.678483+00:00 [queued]>
+[2022-06-19 20:15:35,929] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-cdc_load.create_target_tables manual__2022-06-19T20:15:34.678483+00:00 [queued]>
+[2022-06-19 20:15:35,929] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 20:15:35,929] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-19 20:15:35,929] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 20:15:35,941] {taskinstance.py:1377} INFO - Executing <Task(PostgresOperator): create_target_tables> on 2022-06-19 20:15:34.678483+00:00
+[2022-06-19 20:15:35,945] {standard_task_runner.py:52} INFO - Started process 359 to run task
+[2022-06-19 20:15:35,948] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'T-dbt-job-cdc_load', 'create_target_tables', 'manual__2022-06-19T20:15:34.678483+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/dbt_test.py', '--cfg-path', '/tmp/tmp7kkzd2yi', '--error-file', '/tmp/tmpbf8khegf']
+[2022-06-19 20:15:35,948] {standard_task_runner.py:80} INFO - Job 17: Subtask create_target_tables
+[2022-06-19 20:15:36,001] {task_command.py:370} INFO - Running <TaskInstance: T-dbt-job-cdc_load.create_target_tables manual__2022-06-19T20:15:34.678483+00:00 [running]> on host 7cbff6e51e2a
+[2022-06-19 20:15:36,065] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuelolle@yahoo.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=T-dbt-job-cdc_load
+AIRFLOW_CTX_TASK_ID=create_target_tables
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-19T20:15:34.678483+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-19T20:15:34.678483+00:00
+[2022-06-19 20:15:36,072] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-19 20:15:36,075] {dbapi.py:213} INFO - Running statement: CREATE SCHEMA IF NOT EXISTS analytics_dim;
+CREATE SCHEMA IF NOT EXISTS analytics_objects;
+CREATE SCHEMA IF NOT EXISTS analytics_stage;
+
+CREATE TABLE IF NOT EXISTS analytics_dim.dim_users (
+    wall_owner_sk serial,
+    user_id numeric,
+    name TEXT,
+    visitor_ind bigint,
+    created_at TEXT,
+    user_segment TEXT,
+    del_ind bigint,
+    PRIMARY KEY (wall_owner_sk)
+);
+
+CREATE TABLE IF NOT EXISTS analytics_stage.users_cdc (
+    id serial,
+    name TEXT,
+    visitor_ind bigint,
+    created_at TEXT,
+    user_segment TEXT,
+    event_type TEXT,
+    event_time TEXT,
+    export_date TEXT
+);
+
+CREATE TABLE IF NOT EXISTS analytics_dim.dim_walls (
+    wall_sk serial,
+    wall_id TEXT,
+    wall_name TEXT,
+    PRIMARY KEY (wall_sk)
+);
+
+CREATE TABLE IF NOT EXISTS analytics_stage.walls_cdc (
+    id serial,
+    name TEXT,
+    owner TEXT,
+    created_at TEXT,
+    event_type TEXT,
+    event_time TEXT,
+    export_date TEXT
+);
+
+
+ CREATE TABLE IF NOT EXISTS analytics_dim.dim_user_wall (
+     user_wall_sk serial,
+     wall_id TEXT,
+     owner TEXT,
+     created_at TEXT
+ );, parameters: None
+[2022-06-19 20:15:36,076] {postgres.py:94} INFO - NOTICE:  schema "analytics_dim" already exists, skipping
+
+[2022-06-19 20:15:36,076] {postgres.py:94} INFO - NOTICE:  schema "analytics_objects" already exists, skipping
+
+[2022-06-19 20:15:36,076] {postgres.py:94} INFO - NOTICE:  schema "analytics_stage" already exists, skipping
+
+[2022-06-19 20:15:36,076] {postgres.py:94} INFO - NOTICE:  relation "dim_users" already exists, skipping
+
+[2022-06-19 20:15:36,076] {postgres.py:94} INFO - NOTICE:  relation "users_cdc" already exists, skipping
+
+[2022-06-19 20:15:36,076] {postgres.py:94} INFO - NOTICE:  relation "dim_walls" already exists, skipping
+
+[2022-06-19 20:15:36,077] {postgres.py:94} INFO - NOTICE:  relation "walls_cdc" already exists, skipping
+
+[2022-06-19 20:15:36,077] {postgres.py:94} INFO - NOTICE:  relation "dim_user_wall" already exists, skipping
+
+[2022-06-19 20:15:36,088] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=T-dbt-job-cdc_load, task_id=create_***_tables, execution_date=20220619T201534, start_date=20220619T201535, end_date=20220619T201536
+[2022-06-19 20:15:36,121] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-19 20:15:36,179] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

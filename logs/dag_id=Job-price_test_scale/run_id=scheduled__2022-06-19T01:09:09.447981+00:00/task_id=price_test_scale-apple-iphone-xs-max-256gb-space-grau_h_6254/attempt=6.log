@@ -1,0 +1,59 @@
+[2022-06-19 17:55:35,712] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xs-max-256gb-space-grau_h_6254 scheduled__2022-06-19T01:09:09.447981+00:00 [queued]>
+[2022-06-19 17:55:35,787] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xs-max-256gb-space-grau_h_6254 scheduled__2022-06-19T01:09:09.447981+00:00 [queued]>
+[2022-06-19 17:55:35,792] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 17:55:35,792] {taskinstance.py:1357} INFO - Starting attempt 6 of 6
+[2022-06-19 17:55:35,792] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 17:55:35,847] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): price_test_scale-apple-iphone-xs-max-256gb-space-grau_h_6254> on 2022-06-19 01:09:09.447981+00:00
+[2022-06-19 17:55:35,873] {standard_task_runner.py:52} INFO - Started process 1346 to run task
+[2022-06-19 17:55:35,967] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-price_test_scale', 'price_test_scale-apple-iphone-xs-max-256gb-space-grau_h_6254', 'scheduled__2022-06-19T01:09:09.447981+00:00', '--job-id', '564', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_test_scale.py', '--cfg-path', '/tmp/tmpz82vz8et', '--error-file', '/tmp/tmp2vi98j9y']
+[2022-06-19 17:55:35,968] {standard_task_runner.py:80} INFO - Job 564: Subtask price_test_scale-apple-iphone-xs-max-256gb-space-grau_h_6254
+[2022-06-19 17:55:36,161] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-19 17:55:36,558] {task_command.py:370} INFO - Running <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xs-max-256gb-space-grau_h_6254 scheduled__2022-06-19T01:09:09.447981+00:00 [running]> on host 2d9e52ec85d2
+[2022-06-19 17:55:37,104] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-price_test_scale
+AIRFLOW_CTX_TASK_ID=price_test_scale-apple-iphone-xs-max-256gb-space-grau_h_6254
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-19T01:09:09.447981+00:00
+AIRFLOW_CTX_TRY_NUMBER=6
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-19T01:09:09.447981+00:00
+[2022-06-19 17:55:37,106] {logging_mixin.py:115} INFO - /opt/airflow
+[2022-06-19 17:55:37,931] {logging_mixin.py:115} INFO - https://www.handyverkauf.net/apple-iphone-xs-max-256gb-space-grau_h_6254
+[2022-06-19 18:00:19,315] {local_task_job.py:84} ERROR - Received SIGTERM. Terminating subprocesses
+[2022-06-19 18:00:19,445] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 1346. PIDs of all processes in the group: [2033, 2399, 2489, 2491, 2562, 2568, 2707, 3833, 2665, 1346]
+[2022-06-19 18:00:19,351] {logging_mixin.py:115} INFO - Message: script timeout
+  (Session info: headless chrome=102.0.5005.115)
+Stacktrace:
+#0 0x56368f21ff33 <unknown>
+#1 0x56368ef69faf <unknown>
+#2 0x56368efd1ef1 <unknown>
+#3 0x56368efbdf72 <unknown>
+#4 0x56368efd12e4 <unknown>
+#5 0x56368efbde63 <unknown>
+#6 0x56368ef9382a <unknown>
+#7 0x56368ef94985 <unknown>
+#8 0x56368f2644cd <unknown>
+#9 0x56368f2685ec <unknown>
+#10 0x56368f24e71e <unknown>
+#11 0x56368f269238 <unknown>
+#12 0x56368f243870 <unknown>
+#13 0x56368f285608 <unknown>
+#14 0x56368f285788 <unknown>
+#15 0x56368f29ff1d <unknown>
+#16 0x7fd9358c3ea7 <unknown>
+[2022-06-19 18:00:19,719] {logging_mixin.py:115} INFO - [('299,39 ', '/go/?anbieter=clevertronic&id=6254', 'Apple iPhone XS Max 256GB space grau verkaufen', 'Sehr gut', '2022-06-19'), ('289,08 ', '/go/?anbieter=wirkaufens&id=6254', 'Apple iPhone XS Max 256GB space grau verkaufen', 'Sehr gut', '2022-06-19'), ('280,40 ', '/go/?anbieter=rebuy&id=6254', 'Apple iPhone XS Max 256GB space grau verkaufen', 'Sehr gut', '2022-06-19'), ('272,01 ', '/go/?anbieter=zoxs&id=6254', 'Apple iPhone XS Max 256GB space grau verkaufen', 'Sehr gut', '2022-06-19'), ('260,00 ', '/go/?anbieter=cleverbuy&id=6254', 'Apple iPhone XS Max 256GB space grau verkaufen', 'Sehr gut', '2022-06-19'), ('249,40 ', '/go/?anbieter=flip4new&id=6254', 'Apple iPhone XS Max 256GB space grau verkaufen', 'Sehr gut', '2022-06-19'), ('242,00 ', '/go/?anbieter=myswooop&id=6254', 'Apple iPhone XS Max 256GB space grau verkaufen', 'Sehr gut', '2022-06-19'), ('230,00 ', '/go/?anbieter=rezilla&id=6254', 'Apple iPhone XS Max 256GB space grau verkaufen', 'Sehr gut', '2022-06-19')]
+[2022-06-19 18:00:19,760] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 1346
+[2022-06-19 18:00:19,767] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-06-19 18:00:19,768] {process_utils.py:75} INFO - Process psutil.Process(pid=2491, status='terminated', started='17:55:38') (2491) terminated with exit code None
+[2022-06-19 18:00:19,772] {process_utils.py:75} INFO - Process psutil.Process(pid=2665, status='terminated', started='17:55:39') (2665) terminated with exit code None
+[2022-06-19 18:00:19,842] {process_utils.py:75} INFO - Process psutil.Process(pid=3833, status='terminated', started='17:55:43') (3833) terminated with exit code None
+[2022-06-19 18:00:19,842] {process_utils.py:75} INFO - Process psutil.Process(pid=2707, status='terminated', started='17:55:39') (2707) terminated with exit code None
+[2022-06-19 18:00:19,842] {process_utils.py:75} INFO - Process psutil.Process(pid=2399, status='terminated', started='17:55:38') (2399) terminated with exit code None
+[2022-06-19 18:00:19,843] {process_utils.py:75} INFO - Process psutil.Process(pid=2489, status='terminated', started='17:55:38') (2489) terminated with exit code None
+[2022-06-19 18:00:19,957] {process_utils.py:75} INFO - Process psutil.Process(pid=2033, status='terminated', started='17:55:37') (2033) terminated with exit code None
+[2022-06-19 18:00:19,957] {process_utils.py:75} INFO - Process psutil.Process(pid=2568, status='terminated', started='17:55:38') (2568) terminated with exit code None
+[2022-06-19 18:00:19,957] {process_utils.py:75} INFO - Process psutil.Process(pid=2562, status='terminated', started='17:55:38') (2562) terminated with exit code None

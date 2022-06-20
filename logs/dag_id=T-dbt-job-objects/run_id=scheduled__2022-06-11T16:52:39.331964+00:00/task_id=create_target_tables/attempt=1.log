@@ -1,0 +1,67 @@
+[2022-06-11 18:52:41,495] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-objects.create_target_tables scheduled__2022-06-11T16:52:39.331964+00:00 [queued]>
+[2022-06-11 18:52:41,513] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-objects.create_target_tables scheduled__2022-06-11T16:52:39.331964+00:00 [queued]>
+[2022-06-11 18:52:41,513] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-11 18:52:41,513] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-11 18:52:41,513] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-11 18:52:41,532] {taskinstance.py:1377} INFO - Executing <Task(PostgresOperator): create_target_tables> on 2022-06-11 16:52:39.331964+00:00
+[2022-06-11 18:52:41,540] {standard_task_runner.py:52} INFO - Started process 1681 to run task
+[2022-06-11 18:52:41,545] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'T-dbt-job-objects', 'create_target_tables', 'scheduled__2022-06-11T16:52:39.331964+00:00', '--job-id', '99', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/dbt_test.py', '--cfg-path', '/tmp/tmphd99kyjj', '--error-file', '/tmp/tmpqc3fbjm3']
+[2022-06-11 18:52:41,545] {standard_task_runner.py:80} INFO - Job 99: Subtask create_target_tables
+[2022-06-11 18:52:41,571] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-11 18:52:41,691] {task_command.py:370} INFO - Running <TaskInstance: T-dbt-job-objects.create_target_tables scheduled__2022-06-11T16:52:39.331964+00:00 [running]> on host d8836eb746ac
+[2022-06-11 18:52:41,875] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuelolle@yahoo.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=T-dbt-job-objects
+AIRFLOW_CTX_TASK_ID=create_target_tables
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-11T16:52:39.331964+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-11T16:52:39.331964+00:00
+[2022-06-11 18:52:41,903] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-11 18:52:41,914] {dbapi.py:213} INFO - Running statement: CREATE SCHEMA IF NOT EXISTS analytics_dim;
+CREATE SCHEMA IF NOT EXISTS analytics_objects;
+
+CREATE TABLE IF NOT EXISTS analytics_dim.dim_users (
+    wall_owner_sk serial,
+    user_id TEXT,
+    visitor_ind bigint,
+    created_at TEXT,
+    user_segment TEXT,
+    del_ind bigint,
+    PRIMARY KEY (wall_owner_sk)
+);
+
+CREATE TABLE IF NOT EXISTS analytics_objects.users_cdc (
+    id serial,
+    name TEXT,
+    visitor_ind bigint,
+    created_at TEXT,
+    user_segment TEXT,
+    event_type TEXT,
+    event_time TEXT,
+    export_date TEXT
+);
+
+CREATE TABLE IF NOT EXISTS analytics_dim.dim_walls (
+    wall_sk serial,
+    wall_id TEXT,
+    wall_name TEXT,
+    PRIMARY KEY (wall_sk)
+);
+
+CREATE TABLE IF NOT EXISTS analytics_objects.walls_cdc (
+    id serial,
+    name TEXT,
+    owner TEXT,
+    created_at TEXT,
+    event_type TEXT,
+    event_time TEXT,
+    export_date TEXT
+);, parameters: None
+[2022-06-11 18:52:41,964] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=T-dbt-job-objects, task_id=create_***_tables, execution_date=20220611T165239, start_date=20220611T185241, end_date=20220611T185241
+[2022-06-11 18:52:42,005] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-11 18:52:42,087] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

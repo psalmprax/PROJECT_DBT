@@ -1,0 +1,90 @@
+[2022-06-19 04:01:53,075] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xs-max-512gb-space-grau_h_6257 scheduled__2022-06-19T01:09:09.447981+00:00 [queued]>
+[2022-06-19 04:01:53,752] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xs-max-512gb-space-grau_h_6257 scheduled__2022-06-19T01:09:09.447981+00:00 [queued]>
+[2022-06-19 04:01:53,754] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 04:01:53,754] {taskinstance.py:1357} INFO - Starting attempt 2 of 6
+[2022-06-19 04:01:53,754] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 04:01:54,505] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): price_test_scale-apple-iphone-xs-max-512gb-space-grau_h_6257> on 2022-06-19 01:09:09.447981+00:00
+[2022-06-19 04:01:56,121] {standard_task_runner.py:52} INFO - Started process 16482 to run task
+[2022-06-19 04:01:57,115] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-price_test_scale', 'price_test_scale-apple-iphone-xs-max-512gb-space-grau_h_6257', 'scheduled__2022-06-19T01:09:09.447981+00:00', '--job-id', '508', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_test_scale.py', '--cfg-path', '/tmp/tmp9r4kismb', '--error-file', '/tmp/tmpdxsv0k27']
+[2022-06-19 04:01:57,115] {standard_task_runner.py:80} INFO - Job 508: Subtask price_test_scale-apple-iphone-xs-max-512gb-space-grau_h_6257
+[2022-06-19 04:01:57,187] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-19 04:01:59,249] {task_command.py:370} INFO - Running <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xs-max-512gb-space-grau_h_6257 scheduled__2022-06-19T01:09:09.447981+00:00 [running]> on host 3c1ac2e19971
+[2022-06-19 04:03:03,499] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-price_test_scale
+AIRFLOW_CTX_TASK_ID=price_test_scale-apple-iphone-xs-max-512gb-space-grau_h_6257
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-19T01:09:09.447981+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-19T01:09:09.447981+00:00
+[2022-06-19 04:03:03,513] {logging_mixin.py:115} INFO - /opt/airflow
+[2022-06-19 04:03:05,374] {logging_mixin.py:115} INFO - https://www.handyverkauf.net/apple-iphone-xs-max-512gb-space-grau_h_6257
+[2022-06-19 04:05:31,610] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/docker_job/price_test_scale.py", line 132, in run_from_class
+    webdriver.Chrome(executable_path="dags/docker_job/chromedriver", options=options),
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    service_log_path, service, keep_alive)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chromium/webdriver.py", line 98, in __init__
+    options=options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 275, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 365, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+Stacktrace:
+#0 0x561e570e0f33 <unknown>
+#1 0x561e56e2b118 <unknown>
+#2 0x561e56e51282 <unknown>
+#3 0x561e56e4d7c6 <unknown>
+#4 0x561e56e49d5a <unknown>
+#5 0x561e56e84d3a <unknown>
+#6 0x561e56e7ee63 <unknown>
+#7 0x561e56e5482a <unknown>
+#8 0x561e56e55985 <unknown>
+#9 0x561e571254cd <unknown>
+#10 0x561e571295ec <unknown>
+#11 0x561e5710f71e <unknown>
+#12 0x561e5712a238 <unknown>
+#13 0x561e57104870 <unknown>
+#14 0x561e57146608 <unknown>
+#15 0x561e57146788 <unknown>
+#16 0x561e57160f1d <unknown>
+#17 0x7fc71ed35ea7 <unknown>
+
+[2022-06-19 04:06:08,482] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=Job-price_test_scale, task_id=price_test_scale-apple-iphone-xs-max-512gb-space-grau_h_6257, execution_date=20220619T010909, start_date=20220619T040153, end_date=20220619T040608
+[2022-06-19 04:06:08,925] {standard_task_runner.py:97} ERROR - Failed to execute job 508 for task price_test_scale-apple-iphone-xs-max-512gb-space-grau_h_6257 (Message: unknown error: DevToolsActivePort file doesn't exist
+Stacktrace:
+#0 0x561e570e0f33 <unknown>
+#1 0x561e56e2b118 <unknown>
+#2 0x561e56e51282 <unknown>
+#3 0x561e56e4d7c6 <unknown>
+#4 0x561e56e49d5a <unknown>
+#5 0x561e56e84d3a <unknown>
+#6 0x561e56e7ee63 <unknown>
+#7 0x561e56e5482a <unknown>
+#8 0x561e56e55985 <unknown>
+#9 0x561e571254cd <unknown>
+#10 0x561e571295ec <unknown>
+#11 0x561e5710f71e <unknown>
+#12 0x561e5712a238 <unknown>
+#13 0x561e57104870 <unknown>
+#14 0x561e57146608 <unknown>
+#15 0x561e57146788 <unknown>
+#16 0x561e57160f1d <unknown>
+#17 0x7fc71ed35ea7 <unknown>
+; 16482)
+[2022-06-19 04:06:09,048] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-19 04:08:12,214] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,1 @@
+[2022-06-18 14:28:56,918] {task_command.py:370} INFO - Running <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xs-256gb-space-grau_h_6245 scheduled__2022-06-18T08:47:49.365456+00:00 [failed]> on host 3c1ac2e19971

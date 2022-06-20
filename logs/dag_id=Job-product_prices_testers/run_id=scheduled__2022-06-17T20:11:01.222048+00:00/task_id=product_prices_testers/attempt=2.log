@@ -1,0 +1,91 @@
+[2022-06-18 08:51:56,669] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-product_prices_testers.product_prices_testers scheduled__2022-06-17T20:11:01.222048+00:00 [up_for_retry]>
+[2022-06-18 08:51:56,824] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-product_prices_testers.product_prices_testers scheduled__2022-06-17T20:11:01.222048+00:00 [up_for_retry]>
+[2022-06-18 08:51:56,824] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 08:51:56,825] {taskinstance.py:1357} INFO - Starting attempt 2 of 6
+[2022-06-18 08:51:56,825] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 08:51:57,258] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): product_prices_testers> on 2022-06-17 20:11:01.222048+00:00
+[2022-06-18 08:51:57,278] {standard_task_runner.py:52} INFO - Started process 2791 to run task
+[2022-06-18 08:51:57,742] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-product_prices_testers', 'product_prices_testers', 'scheduled__2022-06-17T20:11:01.222048+00:00', '--job-id', '364', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_test.py', '--cfg-path', '/tmp/tmpxm7yi8en', '--error-file', '/tmp/tmpamvmfc4i']
+[2022-06-18 08:51:57,761] {standard_task_runner.py:80} INFO - Job 364: Subtask product_prices_testers
+[2022-06-18 08:51:59,986] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-18 08:55:02,258] {task_command.py:370} INFO - Running <TaskInstance: Job-product_prices_testers.product_prices_testers scheduled__2022-06-17T20:11:01.222048+00:00 [running]> on host 3c1ac2e19971
+[2022-06-18 08:55:03,732] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-product_prices_testers
+AIRFLOW_CTX_TASK_ID=product_prices_testers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T20:11:01.222048+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T20:11:01.222048+00:00
+[2022-06-18 08:55:03,778] {logging_mixin.py:115} INFO - /opt/airflow
+[2022-06-18 08:57:06,988] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/docker_job/price_test.py", line 124, in run_from_class
+    ppd = ProductPriceData(driver=webdriver.Chrome(executable_path="dags/docker_job/chromedriver", options=options))
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    service_log_path, service, keep_alive)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chromium/webdriver.py", line 98, in __init__
+    options=options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 275, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 365, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+Stacktrace:
+#0 0x559db4629f33 <unknown>
+#1 0x559db4374118 <unknown>
+#2 0x559db439a282 <unknown>
+#3 0x559db43967c6 <unknown>
+#4 0x559db4392d5a <unknown>
+#5 0x559db43cdd3a <unknown>
+#6 0x559db43c7e63 <unknown>
+#7 0x559db439d82a <unknown>
+#8 0x559db439e985 <unknown>
+#9 0x559db466e4cd <unknown>
+#10 0x559db46725ec <unknown>
+#11 0x559db465871e <unknown>
+#12 0x559db4673238 <unknown>
+#13 0x559db464d870 <unknown>
+#14 0x559db468f608 <unknown>
+#15 0x559db468f788 <unknown>
+#16 0x559db46a9f1d <unknown>
+#17 0x7f00b6e06ea7 <unknown>
+
+[2022-06-18 08:57:07,153] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=Job-product_prices_testers, task_id=product_prices_testers, execution_date=20220617T201101, start_date=20220618T085156, end_date=20220618T085707
+[2022-06-18 08:57:07,944] {standard_task_runner.py:97} ERROR - Failed to execute job 364 for task product_prices_testers (Message: unknown error: DevToolsActivePort file doesn't exist
+Stacktrace:
+#0 0x559db4629f33 <unknown>
+#1 0x559db4374118 <unknown>
+#2 0x559db439a282 <unknown>
+#3 0x559db43967c6 <unknown>
+#4 0x559db4392d5a <unknown>
+#5 0x559db43cdd3a <unknown>
+#6 0x559db43c7e63 <unknown>
+#7 0x559db439d82a <unknown>
+#8 0x559db439e985 <unknown>
+#9 0x559db466e4cd <unknown>
+#10 0x559db46725ec <unknown>
+#11 0x559db465871e <unknown>
+#12 0x559db4673238 <unknown>
+#13 0x559db464d870 <unknown>
+#14 0x559db468f608 <unknown>
+#15 0x559db468f788 <unknown>
+#16 0x559db46a9f1d <unknown>
+#17 0x7f00b6e06ea7 <unknown>
+; 2791)
+[2022-06-18 08:57:08,237] {local_task_job.py:221} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2022-06-18 08:57:08,330] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 2791. PIDs of all processes in the group: [2791]
+[2022-06-18 08:57:08,330] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 2791
+[2022-06-18 08:57:08,362] {process_utils.py:75} INFO - Process psutil.Process(pid=2791, status='terminated', exitcode=1, started='08:51:56') (2791) terminated with exit code 1

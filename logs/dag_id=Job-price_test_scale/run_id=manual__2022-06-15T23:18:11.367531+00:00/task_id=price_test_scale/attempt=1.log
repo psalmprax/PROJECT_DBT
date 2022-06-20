@@ -1,0 +1,44 @@
+[2022-06-15 23:18:47,079] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-price_test_scale.price_test_scale manual__2022-06-15T23:18:11.367531+00:00 [queued]>
+[2022-06-15 23:18:47,093] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-price_test_scale.price_test_scale manual__2022-06-15T23:18:11.367531+00:00 [queued]>
+[2022-06-15 23:18:47,093] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-15 23:18:47,093] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2022-06-15 23:18:47,093] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-15 23:18:47,109] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): price_test_scale> on 2022-06-15 23:18:11.367531+00:00
+[2022-06-15 23:18:47,113] {standard_task_runner.py:52} INFO - Started process 371 to run task
+[2022-06-15 23:18:47,116] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-price_test_scale', 'price_test_scale', 'manual__2022-06-15T23:18:11.367531+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_scale.py', '--cfg-path', '/tmp/tmpt6cqd7rh', '--error-file', '/tmp/tmp5e1_pzug']
+[2022-06-15 23:18:47,116] {standard_task_runner.py:80} INFO - Job 65: Subtask price_test_scale
+[2022-06-15 23:18:47,198] {task_command.py:370} INFO - Running <TaskInstance: Job-price_test_scale.price_test_scale manual__2022-06-15T23:18:11.367531+00:00 [running]> on host 2d9e52ec85d2
+[2022-06-15 23:18:47,376] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-price_test_scale
+AIRFLOW_CTX_TASK_ID=price_test_scale
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-15T23:18:11.367531+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-15T23:18:11.367531+00:00
+[2022-06-15 23:18:47,393] {logging_mixin.py:115} INFO - /opt/airflow
+[2022-06-15 23:18:47,575] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 173, in run_from_class
+    op_kwargs={"url": url}
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 754, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 64, in validate_key
+    f"The key {k!r} has to be made of alphanumeric characters, dashes, "
+airflow.exceptions.AirflowException: The key 'price_test_scale-https://www.handyverkauf.net/apple-iphone-x-64gb-space-grau_h_5143' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-06-15 23:18:47,582] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=Job-price_test_scale, task_id=price_test_scale, execution_date=20220615T231811, start_date=20220615T231847, end_date=20220615T231847
+[2022-06-15 23:18:47,592] {standard_task_runner.py:97} ERROR - Failed to execute job 65 for task price_test_scale (The key 'price_test_scale-https://www.handyverkauf.net/apple-iphone-x-64gb-space-grau_h_5143' has to be made of alphanumeric characters, dashes, dots and underscores exclusively; 371)
+[2022-06-15 23:18:47,615] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-15 23:18:47,650] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

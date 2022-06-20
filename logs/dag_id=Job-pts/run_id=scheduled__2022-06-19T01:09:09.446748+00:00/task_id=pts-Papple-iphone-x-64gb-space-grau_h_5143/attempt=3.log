@@ -1,0 +1,406 @@
+[2022-06-19 17:55:54,993] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-pts.pts-Papple-iphone-x-64gb-space-grau_h_5143 scheduled__2022-06-19T01:09:09.446748+00:00 [queued]>
+[2022-06-19 17:55:55,880] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-pts.pts-Papple-iphone-x-64gb-space-grau_h_5143 scheduled__2022-06-19T01:09:09.446748+00:00 [queued]>
+[2022-06-19 17:55:56,036] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 17:55:56,036] {taskinstance.py:1357} INFO - Starting attempt 3 of 6
+[2022-06-19 17:55:56,036] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 17:55:57,338] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): pts-Papple-iphone-x-64gb-space-grau_h_5143> on 2022-06-19 01:09:09.446748+00:00
+[2022-06-19 17:55:57,349] {standard_task_runner.py:52} INFO - Started process 4538 to run task
+[2022-06-19 17:55:57,357] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-pts', 'pts-Papple-iphone-x-64gb-space-grau_h_5143', 'scheduled__2022-06-19T01:09:09.446748+00:00', '--job-id', '594', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_scale.py', '--cfg-path', '/tmp/tmplsru7sn9', '--error-file', '/tmp/tmp9uloj16h']
+[2022-06-19 17:55:57,358] {standard_task_runner.py:80} INFO - Job 594: Subtask pts-Papple-iphone-x-64gb-space-grau_h_5143
+[2022-06-19 17:55:58,773] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-19 17:56:50,513] {task_command.py:370} INFO - Running <TaskInstance: Job-pts.pts-Papple-iphone-x-64gb-space-grau_h_5143 scheduled__2022-06-19T01:09:09.446748+00:00 [running]> on host 2d9e52ec85d2
+[2022-06-19 17:58:48,337] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-pts
+AIRFLOW_CTX_TASK_ID=pts-Papple-iphone-x-64gb-space-grau_h_5143
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-19T01:09:09.446748+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-19T01:09:09.446748+00:00
+[2022-06-19 17:58:49,545] {logging_mixin.py:115} INFO - ['https://www.handyverkauf.net/apple-iphone-x-64gb-space-grau_h_5143', 'https://www.handyverkauf.net/apple-iphone-x-256gb-space-grau_h_5145', 'https://www.handyverkauf.net/apple-iphone-xs-64gb-space-grau_h_6242', 'https://www.handyverkauf.net/apple-iphone-xs-256gb-space-grau_h_6245', 'https://www.handyverkauf.net/apple-iphone-xs-512gb-space-grau_h_6248', 'https://www.handyverkauf.net/apple-iphone-xs-max-64gb-space-grau_h_6251', 'https://www.handyverkauf.net/apple-iphone-xs-max-256gb-space-grau_h_6254', 'https://www.handyverkauf.net/apple-iphone-xs-max-512gb-space-grau_h_6257', 'https://www.handyverkauf.net/apple-iphone-xr-64gb-schwarz_h_6260', 'https://www.handyverkauf.net/apple-iphone-xr-128gb-schwarz_h_6266']
+[2022-06-19 17:59:31,733] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 119, in test
+    webdriver.Chrome(executable_path="dags/docker_job/chromedriver", options=options),
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    service_log_path, service, keep_alive)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chromium/webdriver.py", line 98, in __init__
+    options=options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 275, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 365, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: headless chrome=102.0.5005.115)
+Stacktrace:
+#0 0x5631a0aeff33 <unknown>
+#1 0x5631a0839faf <unknown>
+#2 0x5631a08282e4 <unknown>
+#3 0x5631a08197b8 <unknown>
+#4 0x5631a089420a <unknown>
+#5 0x5631a088de63 <unknown>
+#6 0x5631a086382a <unknown>
+#7 0x5631a0864985 <unknown>
+#8 0x5631a0b344cd <unknown>
+#9 0x5631a0b385ec <unknown>
+#10 0x5631a0b1e71e <unknown>
+#11 0x5631a0b39238 <unknown>
+#12 0x5631a0b13870 <unknown>
+#13 0x5631a0b55608 <unknown>
+#14 0x5631a0b55788 <unknown>
+#15 0x5631a0b6ff1d <unknown>
+#16 0x7ff616883ea7 <unknown>
+
+[2022-06-19 17:59:43,699] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=Job-pts, task_id=pts-Papple-iphone-x-64gb-space-grau_h_5143, execution_date=20220619T010909, start_date=20220619T175555, end_date=20220619T175943
+[2022-06-19 18:00:19,232] {local_task_job.py:84} ERROR - Received SIGTERM. Terminating subprocesses
+[2022-06-19 18:00:19,349] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 4538. PIDs of all processes in the group: [4744, 4759, 4763, 4764, 4772, 4773, 4795, 4796, 4794, 4538]
+[2022-06-19 18:00:19,349] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 4538
+[2022-06-19 18:00:19,523] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-06-19 18:00:19,551] {standard_task_runner.py:97} ERROR - Failed to execute job 594 for task pts-Papple-iphone-x-64gb-space-grau_h_5143 ((psycopg2.OperationalError) no connection to the server
+
+(Background on this error at: http://sqlalche.me/e/14/e3q8); 4538)
+[2022-06-19 18:00:19,669] {process_utils.py:75} INFO - Process psutil.Process(pid=4763, status='terminated', started='17:58:48') (4763) terminated with exit code None
+[2022-06-19 18:00:19,735] {process_utils.py:75} INFO - Process psutil.Process(pid=4795, status='terminated', started='17:58:49') (4795) terminated with exit code None
+[2022-06-19 18:00:19,767] {process_utils.py:75} INFO - Process psutil.Process(pid=4796, status='terminated', started='17:58:49') (4796) terminated with exit code None
+[2022-06-19 18:00:19,770] {process_utils.py:75} INFO - Process psutil.Process(pid=4773, status='terminated', started='17:58:49') (4773) terminated with exit code None
+[2022-06-19 18:00:19,771] {process_utils.py:75} INFO - Process psutil.Process(pid=4772, status='terminated', started='17:58:49') (4772) terminated with exit code None
+[2022-06-19 18:00:19,771] {process_utils.py:75} INFO - Process psutil.Process(pid=4538, status='terminated', exitcode=1, started='17:55:57') (4538) terminated with exit code 1
+[2022-06-19 18:00:19,771] {process_utils.py:75} INFO - Process psutil.Process(pid=4759, status='terminated', started='17:58:48') (4759) terminated with exit code None
+[2022-06-19 18:00:19,771] {process_utils.py:75} INFO - Process psutil.Process(pid=4794, status='terminated', started='17:58:49') (4794) terminated with exit code None
+[2022-06-19 18:00:19,771] {process_utils.py:75} INFO - Process psutil.Process(pid=4764, status='terminated', started='17:58:48') (4764) terminated with exit code None
+[2022-06-19 18:00:19,802] {process_utils.py:75} INFO - Process psutil.Process(pid=4744, status='terminated', started='17:58:48') (4744) terminated with exit code None
+[2022-06-19 18:00:19,803] {local_task_job.py:156} INFO - Task exited with return code 143
+[2022-06-19 18:00:19,818] {logging_mixin.py:115} WARNING - --- Logging error ---
+[2022-06-19 18:00:19,844] {logging_mixin.py:115} WARNING - Traceback (most recent call last):
+[2022-06-19 18:00:19,844] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3141, in _wrap_pool_connect
+    return fn()
+[2022-06-19 18:00:19,844] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 301, in connect
+    return _ConnectionFairy._checkout(self)
+[2022-06-19 18:00:19,844] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 755, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+[2022-06-19 18:00:19,844] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 419, in checkout
+    rec = pool._do_get()
+[2022-06-19 18:00:19,844] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 259, in _do_get
+    return self._create_connection()
+[2022-06-19 18:00:19,844] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 247, in _create_connection
+    return _ConnectionRecord(self)
+[2022-06-19 18:00:19,844] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 362, in __init__
+    self.__connect(first_connect_check=True)
+[2022-06-19 18:00:19,845] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+[2022-06-19 18:00:19,845] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+[2022-06-19 18:00:19,845] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+[2022-06-19 18:00:19,845] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 599, in __connect
+    connection = pool._invoke_creator(self)
+[2022-06-19 18:00:19,845] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+[2022-06-19 18:00:19,845] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 583, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+[2022-06-19 18:00:19,845] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[2022-06-19 18:00:19,846] {logging_mixin.py:115} WARNING - psycopg2.OperationalError: could not translate host name "postgres_***" to address: Temporary failure in name resolution
+[2022-06-19 18:00:19,846] {logging_mixin.py:115} WARNING - 
+The above exception was the direct cause of the following exception:
+[2022-06-19 18:00:19,846] {logging_mixin.py:115} WARNING - Traceback (most recent call last):
+[2022-06-19 18:00:19,846] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 219, in heartbeat
+    session.merge(self)
+[2022-06-19 18:00:19,846] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2877, in merge
+    _resolve_conflict_map=_resolve_conflict_map,
+[2022-06-19 18:00:19,846] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2950, in _merge
+    merged = self.get(mapper.class_, key[1], identity_token=key[2])
+[2022-06-19 18:00:19,846] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2702, in get
+    identity_token=identity_token,
+[2022-06-19 18:00:19,846] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2800, in _get_impl
+    load_options=load_options,
+[2022-06-19 18:00:19,846] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/loading.py", line 535, in load_on_pk_identity
+    bind_arguments=bind_arguments,
+[2022-06-19 18:00:19,846] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1669, in execute
+    conn = self._connection_for_bind(bind, close_with_result=True)
+[2022-06-19 18:00:19,846] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1520, in _connection_for_bind
+    engine, execution_options
+[2022-06-19 18:00:19,846] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+[2022-06-19 18:00:19,847] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3095, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+[2022-06-19 18:00:19,847] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 91, in __init__
+    else engine.raw_connection()
+[2022-06-19 18:00:19,847] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3174, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+[2022-06-19 18:00:19,847] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3145, in _wrap_pool_connect
+    e, dialect, self
+[2022-06-19 18:00:19,848] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2004, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+[2022-06-19 18:00:19,848] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+[2022-06-19 18:00:19,848] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3141, in _wrap_pool_connect
+    return fn()
+[2022-06-19 18:00:19,848] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 301, in connect
+    return _ConnectionFairy._checkout(self)
+[2022-06-19 18:00:19,849] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 755, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+[2022-06-19 18:00:19,849] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 419, in checkout
+    rec = pool._do_get()
+[2022-06-19 18:00:19,850] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 259, in _do_get
+    return self._create_connection()
+[2022-06-19 18:00:19,850] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 247, in _create_connection
+    return _ConnectionRecord(self)
+[2022-06-19 18:00:19,850] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 362, in __init__
+    self.__connect(first_connect_check=True)
+[2022-06-19 18:00:19,850] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+[2022-06-19 18:00:19,850] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+[2022-06-19 18:00:19,851] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+[2022-06-19 18:00:19,851] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 599, in __connect
+    connection = pool._invoke_creator(self)
+[2022-06-19 18:00:19,851] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+[2022-06-19 18:00:19,851] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 583, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+[2022-06-19 18:00:19,851] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[2022-06-19 18:00:19,851] {logging_mixin.py:115} WARNING - sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres_***" to address: Temporary failure in name resolution
+
+(Background on this error at: http://sqlalche.me/e/14/e3q8)
+[2022-06-19 18:00:19,852] {logging_mixin.py:115} WARNING - 
+During handling of the above exception, another exception occurred:
+[2022-06-19 18:00:19,852] {logging_mixin.py:115} WARNING - Traceback (most recent call last):
+[2022-06-19 18:00:19,852] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3141, in _wrap_pool_connect
+    return fn()
+[2022-06-19 18:00:19,852] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 301, in connect
+    return _ConnectionFairy._checkout(self)
+[2022-06-19 18:00:19,852] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 755, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 419, in checkout
+    rec = pool._do_get()
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 259, in _do_get
+    return self._create_connection()
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 247, in _create_connection
+    return _ConnectionRecord(self)
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 362, in __init__
+    self.__connect(first_connect_check=True)
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 599, in __connect
+    connection = pool._invoke_creator(self)
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 583, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING - psycopg2.OperationalError: connection to server at "postgres_***" (172.22.0.10), port 5432 failed: FATAL:  the database system is shutting down
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING - 
+The above exception was the direct cause of the following exception:
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING - Traceback (most recent call last):
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+[2022-06-19 18:00:19,853] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 616, in format
+    record.exc_text = self.formatException(record.exc_info)
+[2022-06-19 18:00:19,854] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 566, in formatException
+    traceback.print_exception(ei[0], ei[1], tb, None, sio)
+[2022-06-19 18:00:19,854] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/traceback.py", line 104, in print_exception
+    type(value), value, tb, limit=limit).format(chain=chain):
+[2022-06-19 18:00:19,854] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/traceback.py", line 508, in __init__
+    capture_locals=capture_locals)
+[2022-06-19 18:00:19,855] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/traceback.py", line 363, in extract
+    f.line
+[2022-06-19 18:00:19,855] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/traceback.py", line 285, in line
+    self._line = linecache.getline(self.filename, self.lineno).strip()
+[2022-06-19 18:00:19,855] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/linecache.py", line 16, in getline
+    lines = getlines(filename, module_globals)
+[2022-06-19 18:00:19,855] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/linecache.py", line 47, in getlines
+    return updatecache(filename, module_globals)
+[2022-06-19 18:00:19,855] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/linecache.py", line 137, in updatecache
+    lines = fp.readlines()
+[2022-06-19 18:00:19,857] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/codecs.py", line 319, in decode
+    def decode(self, input, final=False):
+[2022-06-19 18:00:19,861] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/local_task_job.py", line 86, in signal_handler
+    self.handle_task_exit(128 + signum)
+[2022-06-19 18:00:19,861] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/local_task_job.py", line 157, in handle_task_exit
+    self.task_instance.refresh_from_db()
+[2022-06-19 18:00:19,861] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+[2022-06-19 18:00:19,861] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 873, in refresh_from_db
+    ti = qry.first()
+[2022-06-19 18:00:19,861] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2734, in first
+    return self.limit(1)._iter().first()
+[2022-06-19 18:00:19,861] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2821, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+[2022-06-19 18:00:19,861] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1669, in execute
+    conn = self._connection_for_bind(bind, close_with_result=True)
+[2022-06-19 18:00:19,861] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1520, in _connection_for_bind
+    engine, execution_options
+[2022-06-19 18:00:19,861] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+[2022-06-19 18:00:19,861] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3095, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+[2022-06-19 18:00:19,861] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 91, in __init__
+    else engine.raw_connection()
+[2022-06-19 18:00:19,862] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3174, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+[2022-06-19 18:00:19,862] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3145, in _wrap_pool_connect
+    e, dialect, self
+[2022-06-19 18:00:19,862] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2004, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+[2022-06-19 18:00:19,862] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+[2022-06-19 18:00:19,862] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3141, in _wrap_pool_connect
+    return fn()
+[2022-06-19 18:00:19,863] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 301, in connect
+    return _ConnectionFairy._checkout(self)
+[2022-06-19 18:00:19,863] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 755, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+[2022-06-19 18:00:19,863] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 419, in checkout
+    rec = pool._do_get()
+[2022-06-19 18:00:19,864] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 259, in _do_get
+    return self._create_connection()
+[2022-06-19 18:00:19,865] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 247, in _create_connection
+    return _ConnectionRecord(self)
+[2022-06-19 18:00:19,865] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 362, in __init__
+    self.__connect(first_connect_check=True)
+[2022-06-19 18:00:19,865] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+[2022-06-19 18:00:19,865] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+[2022-06-19 18:00:19,865] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+[2022-06-19 18:00:19,865] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 599, in __connect
+    connection = pool._invoke_creator(self)
+[2022-06-19 18:00:19,865] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+[2022-06-19 18:00:19,867] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 583, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+[2022-06-19 18:00:19,867] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[2022-06-19 18:00:19,867] {logging_mixin.py:115} WARNING - sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "postgres_***" (172.22.0.10), port 5432 failed: FATAL:  the database system is shutting down
+
+(Background on this error at: http://sqlalche.me/e/14/e3q8)
+[2022-06-19 18:00:19,867] {logging_mixin.py:115} WARNING - Call stack:
+[2022-06-19 18:00:19,918] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/bin/airflow", line 8, in <module>
+    sys.exit(main())
+[2022-06-19 18:00:19,918] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/__main__.py", line 38, in main
+    args.func(args)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 51, in command
+    return func(*args, **kwargs)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 99, in wrapper
+    return f(*args, **kwargs)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/celery_command.py", line 194, in worker
+    _run_worker(options=options, skip_serve_logs=skip_serve_logs)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/celery_command.py", line 94, in _run_worker
+    celery_app.worker_main(options)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/app/base.py", line 391, in worker_main
+    self.start(argv=argv)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/app/base.py", line 371, in start
+    celery.main(args=argv, standalone_mode=False)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/bin/base.py", line 134, in caller
+    return f(ctx, *args, **kwargs)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/bin/worker.py", line 351, in worker
+    worker.start()
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/concurrency/base.py", line 129, in start
+    self.on_start()
+[2022-06-19 18:00:19,919] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/concurrency/prefork.py", line 115, in on_start
+    **self.options)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/concurrency/asynpool.py", line 463, in __init__
+    super().__init__(processes, *args, **kwargs)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/billiard/pool.py", line 1046, in __init__
+    self._create_worker_process(i)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/concurrency/asynpool.py", line 480, in _create_worker_process
+    return super()._create_worker_process(i)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/billiard/pool.py", line 1158, in _create_worker_process
+    w.start()
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/billiard/process.py", line 124, in start
+    self._popen = self._Popen(self)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/billiard/context.py", line 333, in _Popen
+    return Popen(process_obj)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/billiard/popen_fork.py", line 24, in __init__
+    self._launch(process_obj)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/billiard/popen_fork.py", line 79, in _launch
+    code = process_obj._bootstrap()
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/billiard/process.py", line 327, in _bootstrap
+    self.run()
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/billiard/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/billiard/pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/billiard/pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/app/trace.py", line 650, in fast_trace_task
+    uuid, args, kwargs, request,
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/executors/celery_executor.py", line 93, in execute_command
+    _execute_in_fork(command_to_exec, celery_task_id)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/executors/celery_executor.py", line 128, in _execute_in_fork
+    args.func(args)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 51, in command
+    return func(*args, **kwargs)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 99, in wrapper
+    return f(*args, **kwargs)
+[2022-06-19 18:00:19,920] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 376, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 182, in _run_task_by_selected_method
+    _run_task_by_local_task_job(args, ti)
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 240, in _run_task_by_local_task_job
+    run_job.run()
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 244, in run
+    self._execute()
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/local_task_job.py", line 136, in _execute
+    self.heartbeat()
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 229, in heartbeat
+    self.log.exception("%s heartbeat got an exception", self.__class__.__name__)
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1413, in exception
+    self.error(msg, *args, exc_info=exc_info, **kwargs)
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1407, in error
+    self._log(ERROR, msg, args, **kwargs)
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1514, in _log
+    self.handle(record)
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1524, in handle
+    self.callHandlers(record)
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 894, in handle
+    self.emit(record)
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/log/file_task_handler.py", line 67, in emit
+    self.handler.emit(record)
+[2022-06-19 18:00:19,921] {logging_mixin.py:115} WARNING - Message: '%s heartbeat got an exception'
+Arguments: ('LocalTaskJob',)

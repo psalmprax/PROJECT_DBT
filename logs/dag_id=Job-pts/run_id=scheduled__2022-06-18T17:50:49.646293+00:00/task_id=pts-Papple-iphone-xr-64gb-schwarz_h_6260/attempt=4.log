@@ -1,0 +1,2 @@
+[2022-06-19 01:05:27,065] {taskinstance.py:1153} INFO - Dependencies not met for <TaskInstance: Job-pts.pts-Papple-iphone-xr-64gb-schwarz_h_6260 scheduled__2022-06-18T17:50:49.646293+00:00 [scheduled]>, dependency 'Task Instance State' FAILED: Task is in the 'scheduled' state.
+[2022-06-19 01:05:28,306] {local_task_job.py:101} INFO - Task is not able to be run

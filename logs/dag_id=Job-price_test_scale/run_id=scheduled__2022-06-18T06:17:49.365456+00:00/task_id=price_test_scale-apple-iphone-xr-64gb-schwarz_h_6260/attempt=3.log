@@ -1,0 +1,173 @@
+[2022-06-18 09:10:06,951] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xr-64gb-schwarz_h_6260 scheduled__2022-06-18T06:17:49.365456+00:00 [queued]>
+[2022-06-18 09:10:06,975] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xr-64gb-schwarz_h_6260 scheduled__2022-06-18T06:17:49.365456+00:00 [queued]>
+[2022-06-18 09:10:06,975] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 09:10:06,975] {taskinstance.py:1357} INFO - Starting attempt 3 of 6
+[2022-06-18 09:10:06,975] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 09:10:07,005] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): price_test_scale-apple-iphone-xr-64gb-schwarz_h_6260> on 2022-06-18 06:17:49.365456+00:00
+[2022-06-18 09:10:07,047] {standard_task_runner.py:52} INFO - Started process 2802 to run task
+[2022-06-18 09:10:07,084] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-price_test_scale', 'price_test_scale-apple-iphone-xr-64gb-schwarz_h_6260', 'scheduled__2022-06-18T06:17:49.365456+00:00', '--job-id', '392', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_test_scale.py', '--cfg-path', '/tmp/tmp4ll37f8z', '--error-file', '/tmp/tmp6383lnui']
+[2022-06-18 09:10:07,084] {standard_task_runner.py:80} INFO - Job 392: Subtask price_test_scale-apple-iphone-xr-64gb-schwarz_h_6260
+[2022-06-18 09:10:07,214] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-18 09:10:07,592] {task_command.py:370} INFO - Running <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xr-64gb-schwarz_h_6260 scheduled__2022-06-18T06:17:49.365456+00:00 [running]> on host 31bbb70af43b
+[2022-06-18 09:10:07,979] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-price_test_scale
+AIRFLOW_CTX_TASK_ID=price_test_scale-apple-iphone-xr-64gb-schwarz_h_6260
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-18T06:17:49.365456+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-18T06:17:49.365456+00:00
+[2022-06-18 09:10:08,023] {logging_mixin.py:115} INFO - /opt/airflow
+[2022-06-18 09:16:12,879] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/docker_job/price_test_scale.py", line 124, in run_from_class
+    ppd = ProductPriceData(driver=webdriver.Chrome(executable_path="dags/docker_job/chromedriver", options=options))
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    service_log_path, service, keep_alive)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chromium/webdriver.py", line 98, in __init__
+    options=options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 275, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 365, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created
+from tab crashed
+  (Session info: headless chrome=102.0.5005.115)
+Stacktrace:
+#0 0x557a8e3dbf33 <unknown>
+#1 0x557a8e125faf <unknown>
+#2 0x557a8e11203d <unknown>
+#3 0x557a8e111a55 <unknown>
+#4 0x557a8e110f15 <unknown>
+#5 0x557a8e10fc0f <unknown>
+#6 0x557a8e110042 <unknown>
+#7 0x557a8e10f501 <unknown>
+#8 0x557a8e11f290 <unknown>
+#9 0x557a8e10f4a3 <unknown>
+#10 0x557a8e1109d9 <unknown>
+#11 0x557a8e10fc0f <unknown>
+#12 0x557a8e110042 <unknown>
+#13 0x557a8e10f501 <unknown>
+#14 0x557a8e1184b0 <unknown>
+#15 0x557a8e1184fc <unknown>
+#16 0x557a8e10f4a3 <unknown>
+#17 0x557a8e1109d9 <unknown>
+#18 0x557a8e10fc0f <unknown>
+#19 0x557a8e110042 <unknown>
+#20 0x557a8e10f501 <unknown>
+#21 0x557a8e11cb67 <unknown>
+#22 0x557a8e10f4a3 <unknown>
+#23 0x557a8e1109d9 <unknown>
+#24 0x557a8e10fc0f <unknown>
+#25 0x557a8e110042 <unknown>
+#26 0x557a8e10f501 <unknown>
+#27 0x557a8e118a06 <unknown>
+#28 0x557a8e10f4a3 <unknown>
+#29 0x557a8e1109d9 <unknown>
+#30 0x557a8e10fc0f <unknown>
+#31 0x557a8e11019c <unknown>
+#32 0x557a8e1100f4 <unknown>
+#33 0x557a8e117152 <unknown>
+#34 0x557a8e11702e <unknown>
+#35 0x557a8e10f4a3 <unknown>
+#36 0x557a8e1109d9 <unknown>
+#37 0x557a8e10fc0f <unknown>
+#38 0x557a8e110042 <unknown>
+#39 0x557a8e10f501 <unknown>
+#40 0x557a8e10a14a <unknown>
+#41 0x557a8e10f4a3 <unknown>
+#42 0x557a8e10f3bb <unknown>
+#43 0x557a8e10ee40 <unknown>
+#44 0x557a8e127522 <unknown>
+#45 0x557a8e1811a9 <unknown>
+#46 0x557a8e179e63 <unknown>
+#47 0x557a8e14f82a <unknown>
+#48 0x557a8e150985 <unknown>
+#49 0x557a8e4204cd <unknown>
+#50 0x557a8e4245ec <unknown>
+#51 0x557a8e40a71e <unknown>
+#52 0x557a8e425238 <unknown>
+#53 0x557a8e3ff870 <unknown>
+#54 0x557a8e441608 <unknown>
+#55 0x557a8e441788 <unknown>
+#56 0x557a8e45bf1d <unknown>
+#57 0x7fb51d009ea7 <unknown>
+
+[2022-06-18 09:16:13,260] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=Job-price_test_scale, task_id=price_test_scale-apple-iphone-xr-64gb-schwarz_h_6260, execution_date=20220618T061749, start_date=20220618T091006, end_date=20220618T091613
+[2022-06-18 09:16:13,853] {standard_task_runner.py:97} ERROR - Failed to execute job 392 for task price_test_scale-apple-iphone-xr-64gb-schwarz_h_6260 (Message: session not created
+from tab crashed
+  (Session info: headless chrome=102.0.5005.115)
+Stacktrace:
+#0 0x557a8e3dbf33 <unknown>
+#1 0x557a8e125faf <unknown>
+#2 0x557a8e11203d <unknown>
+#3 0x557a8e111a55 <unknown>
+#4 0x557a8e110f15 <unknown>
+#5 0x557a8e10fc0f <unknown>
+#6 0x557a8e110042 <unknown>
+#7 0x557a8e10f501 <unknown>
+#8 0x557a8e11f290 <unknown>
+#9 0x557a8e10f4a3 <unknown>
+#10 0x557a8e1109d9 <unknown>
+#11 0x557a8e10fc0f <unknown>
+#12 0x557a8e110042 <unknown>
+#13 0x557a8e10f501 <unknown>
+#14 0x557a8e1184b0 <unknown>
+#15 0x557a8e1184fc <unknown>
+#16 0x557a8e10f4a3 <unknown>
+#17 0x557a8e1109d9 <unknown>
+#18 0x557a8e10fc0f <unknown>
+#19 0x557a8e110042 <unknown>
+#20 0x557a8e10f501 <unknown>
+#21 0x557a8e11cb67 <unknown>
+#22 0x557a8e10f4a3 <unknown>
+#23 0x557a8e1109d9 <unknown>
+#24 0x557a8e10fc0f <unknown>
+#25 0x557a8e110042 <unknown>
+#26 0x557a8e10f501 <unknown>
+#27 0x557a8e118a06 <unknown>
+#28 0x557a8e10f4a3 <unknown>
+#29 0x557a8e1109d9 <unknown>
+#30 0x557a8e10fc0f <unknown>
+#31 0x557a8e11019c <unknown>
+#32 0x557a8e1100f4 <unknown>
+#33 0x557a8e117152 <unknown>
+#34 0x557a8e11702e <unknown>
+#35 0x557a8e10f4a3 <unknown>
+#36 0x557a8e1109d9 <unknown>
+#37 0x557a8e10fc0f <unknown>
+#38 0x557a8e110042 <unknown>
+#39 0x557a8e10f501 <unknown>
+#40 0x557a8e10a14a <unknown>
+#41 0x557a8e10f4a3 <unknown>
+#42 0x557a8e10f3bb <unknown>
+#43 0x557a8e10ee40 <unknown>
+#44 0x557a8e127522 <unknown>
+#45 0x557a8e1811a9 <unknown>
+#46 0x557a8e179e63 <unknown>
+#47 0x557a8e14f82a <unknown>
+#48 0x557a8e150985 <unknown>
+#49 0x557a8e4204cd <unknown>
+#50 0x557a8e4245ec <unknown>
+#51 0x557a8e40a71e <unknown>
+#52 0x557a8e425238 <unknown>
+#53 0x557a8e3ff870 <unknown>
+#54 0x557a8e441608 <unknown>
+#55 0x557a8e441788 <unknown>
+#56 0x557a8e45bf1d <unknown>
+#57 0x7fb51d009ea7 <unknown>
+; 2802)
+[2022-06-18 09:16:13,904] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-18 09:16:20,211] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

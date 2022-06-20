@@ -1,0 +1,28 @@
+[2022-06-19 20:47:17,736] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-objects.dbt_cleanup-objects manual__2022-06-19T20:41:05.420014+00:00 [queued]>
+[2022-06-19 20:47:17,745] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-objects.dbt_cleanup-objects manual__2022-06-19T20:41:05.420014+00:00 [queued]>
+[2022-06-19 20:47:17,745] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 20:47:17,745] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-19 20:47:17,745] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 20:47:17,758] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): dbt_cleanup-objects> on 2022-06-19 20:41:05.420014+00:00
+[2022-06-19 20:47:17,763] {standard_task_runner.py:52} INFO - Started process 566 to run task
+[2022-06-19 20:47:17,765] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'T-dbt-job-objects', 'dbt_cleanup-objects', 'manual__2022-06-19T20:41:05.420014+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/dbt_model.py', '--cfg-path', '/tmp/tmpywpw_hcr', '--error-file', '/tmp/tmp7en_i7fj']
+[2022-06-19 20:47:17,766] {standard_task_runner.py:80} INFO - Job 28: Subtask dbt_cleanup-objects
+[2022-06-19 20:47:17,816] {task_command.py:370} INFO - Running <TaskInstance: T-dbt-job-objects.dbt_cleanup-objects manual__2022-06-19T20:41:05.420014+00:00 [running]> on host 7cbff6e51e2a
+[2022-06-19 20:47:17,880] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuelolle@yahoo.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=T-dbt-job-objects
+AIRFLOW_CTX_TASK_ID=dbt_cleanup-objects
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-19T20:41:05.420014+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-19T20:41:05.420014+00:00
+[2022-06-19 20:47:17,881] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-19 20:47:17,881] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm -rf /tmp/objects && rm -rf /tmp/tmp* 2>/dev/null || exit 0']
+[2022-06-19 20:47:17,890] {subprocess.py:85} INFO - Output:
+[2022-06-19 20:47:18,008] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-06-19 20:47:18,035] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=T-dbt-job-objects, task_id=dbt_cleanup-objects, execution_date=20220619T204105, start_date=20220619T204717, end_date=20220619T204718
+[2022-06-19 20:47:18,059] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-19 20:47:18,111] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

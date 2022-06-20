@@ -1,0 +1,31 @@
+[2022-06-18 08:47:53,408] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-pts.start_clean-pts scheduled__2022-06-17T22:40:58.837877+00:00 [queued]>
+[2022-06-18 08:47:53,416] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-pts.start_clean-pts scheduled__2022-06-17T22:40:58.837877+00:00 [queued]>
+[2022-06-18 08:47:53,416] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 08:47:53,416] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2022-06-18 08:47:53,416] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 08:47:53,434] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): start_clean-pts> on 2022-06-17 22:40:58.837877+00:00
+[2022-06-18 08:47:53,439] {standard_task_runner.py:52} INFO - Started process 2469 to run task
+[2022-06-18 08:47:53,450] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-pts', 'start_clean-pts', 'scheduled__2022-06-17T22:40:58.837877+00:00', '--job-id', '356', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_scale.py', '--cfg-path', '/tmp/tmp9dmz992c', '--error-file', '/tmp/tmp8h8q1huv']
+[2022-06-18 08:47:53,450] {standard_task_runner.py:80} INFO - Job 356: Subtask start_clean-pts
+[2022-06-18 08:47:53,556] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-18 08:47:54,281] {task_command.py:370} INFO - Running <TaskInstance: Job-pts.start_clean-pts scheduled__2022-06-17T22:40:58.837877+00:00 [running]> on host 2d9e52ec85d2
+[2022-06-18 08:47:56,375] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-pts
+AIRFLOW_CTX_TASK_ID=start_clean-pts
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T22:40:58.837877+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T22:40:58.837877+00:00
+[2022-06-18 08:47:56,377] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-18 08:47:56,377] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'pkill chrome 2>/dev/null || exit 0 && rm -rf /tmp/.* 2>/dev/null || exit 0&& rm -rf /tmp/* 2>/dev/null || exit 0&& rm -rf /tmp/.p* 2>/dev/null || exit 0']
+[2022-06-18 08:47:56,591] {subprocess.py:85} INFO - Output:
+[2022-06-18 08:47:56,700] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-06-18 08:47:56,855] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Job-pts, task_id=start_clean-pts, execution_date=20220617T224058, start_date=20220618T084753, end_date=20220618T084756
+[2022-06-18 08:47:56,991] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 08:47:57,351] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

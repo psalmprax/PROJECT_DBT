@@ -1,0 +1,33 @@
+[2022-06-19 20:41:06,316] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-objects.dbt_clone_and_transform-objects manual__2022-06-19T20:41:05.420014+00:00 [queued]>
+[2022-06-19 20:41:06,323] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-objects.dbt_clone_and_transform-objects manual__2022-06-19T20:41:05.420014+00:00 [queued]>
+[2022-06-19 20:41:06,323] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 20:41:06,323] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-19 20:41:06,323] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 20:41:06,336] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): dbt_clone_and_transform-objects> on 2022-06-19 20:41:05.420014+00:00
+[2022-06-19 20:41:06,340] {standard_task_runner.py:52} INFO - Started process 451 to run task
+[2022-06-19 20:41:06,342] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'T-dbt-job-objects', 'dbt_clone_and_transform-objects', 'manual__2022-06-19T20:41:05.420014+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/dbt_model.py', '--cfg-path', '/tmp/tmp9vjqf1df', '--error-file', '/tmp/tmp7muk7l3b']
+[2022-06-19 20:41:06,343] {standard_task_runner.py:80} INFO - Job 22: Subtask dbt_clone_and_transform-objects
+[2022-06-19 20:41:06,388] {task_command.py:370} INFO - Running <TaskInstance: T-dbt-job-objects.dbt_clone_and_transform-objects manual__2022-06-19T20:41:05.420014+00:00 [running]> on host 7cbff6e51e2a
+[2022-06-19 20:41:06,447] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuelolle@yahoo.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=T-dbt-job-objects
+AIRFLOW_CTX_TASK_ID=dbt_clone_and_transform-objects
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-19T20:41:05.420014+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-19T20:41:05.420014+00:00
+[2022-06-19 20:41:06,448] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-19 20:41:06,449] {subprocess.py:74} INFO - Running command: ['bash', '-c', " rm -rf /tmp/objects && mkdir /tmp/objects                            && cp -r /tmp/dbt /tmp/objects/dbt                             && cd /tmp/objects/dbt && python3 -m venv venv                             && export PIP_USER=false                             && *** /tmp/objects/dbt/venv/bin/activate                             && pip  install --quiet --upgrade pip setuptools                             && pip3 install --quiet 'MarkupSafe<=2.0.1' 'dbt-postgres' 'dbt-core'                             && dbt --version && deactivate                             && cd /tmp/objects/dbt && *** /tmp/objects/dbt/venv/bin/activate                             && dbt deps --profiles-dir /tmp/objects/dbt/ && dbt seed --profiles-dir /tmp/objects/dbt/                             && dbt run --models objects --profiles-dir /tmp/objects/dbt/"]
+[2022-06-19 20:41:06,457] {subprocess.py:85} INFO - Output:
+[2022-06-19 20:41:16,461] {local_task_job.py:221} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-06-19 20:41:16,464] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 451. PIDs of all processes in the group: [452, 467, 475, 451]
+[2022-06-19 20:41:16,465] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 451
+[2022-06-19 20:41:16,465] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-06-19 20:41:16,465] {subprocess.py:103} INFO - Sending SIGTERM signal to process group
+[2022-06-19 20:41:16,469] {process_utils.py:75} INFO - Process psutil.Process(pid=467, status='terminated', started='20:41:12') (467) terminated with exit code None
+[2022-06-19 20:41:16,496] {process_utils.py:75} INFO - Process psutil.Process(pid=452, status='terminated', started='20:41:06') (452) terminated with exit code None
+[2022-06-19 20:41:16,496] {process_utils.py:75} INFO - Process psutil.Process(pid=451, status='terminated', exitcode=0, started='20:41:06') (451) terminated with exit code 0
+[2022-06-19 20:41:16,497] {process_utils.py:75} INFO - Process psutil.Process(pid=475, status='terminated', started='20:41:16') (475) terminated with exit code None

@@ -1,0 +1,30 @@
+[2022-06-16 23:45:57,715] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xr-128gb-schwarz_h_6266 scheduled__2022-06-16T21:15:53.419457+00:00 [queued]>
+[2022-06-16 23:45:57,726] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xr-128gb-schwarz_h_6266 scheduled__2022-06-16T21:15:53.419457+00:00 [queued]>
+[2022-06-16 23:45:57,726] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-16 23:45:57,726] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2022-06-16 23:45:57,726] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-16 23:45:57,739] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): price_test_scale-apple-iphone-xr-128gb-schwarz_h_6266> on 2022-06-16 21:15:53.419457+00:00
+[2022-06-16 23:45:57,745] {standard_task_runner.py:52} INFO - Started process 544 to run task
+[2022-06-16 23:45:57,748] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-price_test_scale', 'price_test_scale-apple-iphone-xr-128gb-schwarz_h_6266', 'scheduled__2022-06-16T21:15:53.419457+00:00', '--job-id', '223', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_test_scale.py', '--cfg-path', '/tmp/tmp4wlt35i7', '--error-file', '/tmp/tmp2x9kua5k']
+[2022-06-16 23:45:57,748] {standard_task_runner.py:80} INFO - Job 223: Subtask price_test_scale-apple-iphone-xr-128gb-schwarz_h_6266
+[2022-06-16 23:45:57,762] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-16 23:45:57,817] {task_command.py:370} INFO - Running <TaskInstance: Job-price_test_scale.price_test_scale-apple-iphone-xr-128gb-schwarz_h_6266 scheduled__2022-06-16T21:15:53.419457+00:00 [running]> on host 31bbb70af43b
+[2022-06-16 23:45:57,910] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-price_test_scale
+AIRFLOW_CTX_TASK_ID=price_test_scale-apple-iphone-xr-128gb-schwarz_h_6266
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T21:15:53.419457+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T21:15:53.419457+00:00
+[2022-06-16 23:45:57,912] {logging_mixin.py:115} INFO - /opt/airflow
+[2022-06-16 23:45:58,629] {logging_mixin.py:115} INFO - https://www.handyverkauf.net/apple-iphone-xr-128gb-schwarz_h_6266
+[2022-06-16 23:46:34,200] {logging_mixin.py:115} INFO - []
+[2022-06-16 23:46:34,201] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-16 23:46:34,214] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Job-price_test_scale, task_id=price_test_scale-apple-iphone-xr-128gb-schwarz_h_6266, execution_date=20220616T211553, start_date=20220616T234557, end_date=20220616T234634
+[2022-06-16 23:46:34,262] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-16 23:46:34,298] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

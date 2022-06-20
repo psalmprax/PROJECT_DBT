@@ -1,0 +1,46 @@
+[2022-06-17 20:23:07,352] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-pts.pts-Papple-iphone-xs-max-256gb-space-grau_h_6254 manual__2022-06-17T20:12:59.782916+00:00 [queued]>
+[2022-06-17 20:23:07,366] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-pts.pts-Papple-iphone-xs-max-256gb-space-grau_h_6254 manual__2022-06-17T20:12:59.782916+00:00 [queued]>
+[2022-06-17 20:23:07,366] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:23:07,366] {taskinstance.py:1357} INFO - Starting attempt 2 of 6
+[2022-06-17 20:23:07,366] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:23:07,379] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): pts-Papple-iphone-xs-max-256gb-space-grau_h_6254> on 2022-06-17 20:12:59.782916+00:00
+[2022-06-17 20:23:07,383] {standard_task_runner.py:52} INFO - Started process 2287 to run task
+[2022-06-17 20:23:07,400] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-pts', 'pts-Papple-iphone-xs-max-256gb-space-grau_h_6254', 'manual__2022-06-17T20:12:59.782916+00:00', '--job-id', '316', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_scale.py', '--cfg-path', '/tmp/tmpdx8j5qgc', '--error-file', '/tmp/tmpp91pnf4r']
+[2022-06-17 20:23:07,401] {standard_task_runner.py:80} INFO - Job 316: Subtask pts-Papple-iphone-xs-max-256gb-space-grau_h_6254
+[2022-06-17 20:23:07,534] {task_command.py:370} INFO - Running <TaskInstance: Job-pts.pts-Papple-iphone-xs-max-256gb-space-grau_h_6254 manual__2022-06-17T20:12:59.782916+00:00 [running]> on host 2d9e52ec85d2
+[2022-06-17 20:23:07,643] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-pts
+AIRFLOW_CTX_TASK_ID=pts-Papple-iphone-xs-max-256gb-space-grau_h_6254
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T20:12:59.782916+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T20:12:59.782916+00:00
+[2022-06-17 20:23:08,556] {logging_mixin.py:115} INFO - ['https://www.handyverkauf.net/apple-iphone-x-64gb-space-grau_h_5143', 'https://www.handyverkauf.net/apple-iphone-x-256gb-space-grau_h_5145', 'https://www.handyverkauf.net/apple-iphone-xs-64gb-space-grau_h_6242', 'https://www.handyverkauf.net/apple-iphone-xs-256gb-space-grau_h_6245', 'https://www.handyverkauf.net/apple-iphone-xs-512gb-space-grau_h_6248', 'https://www.handyverkauf.net/apple-iphone-xs-max-64gb-space-grau_h_6251', 'https://www.handyverkauf.net/apple-iphone-xs-max-256gb-space-grau_h_6254', 'https://www.handyverkauf.net/apple-iphone-xs-max-512gb-space-grau_h_6257', 'https://www.handyverkauf.net/apple-iphone-xr-64gb-schwarz_h_6260', 'https://www.handyverkauf.net/apple-iphone-xr-128gb-schwarz_h_6266']
+[2022-06-17 20:23:13,200] {logging_mixin.py:115} INFO - Message: invalid argument: 'url' must be a string
+  (Session info: headless chrome=102.0.5005.115)
+Stacktrace:
+#0 0x562354006f33 <unknown>
+#1 0x562353d51118 <unknown>
+#2 0x562353db8aa1 <unknown>
+#3 0x562353da4f72 <unknown>
+#4 0x562353db82e4 <unknown>
+#5 0x562353da4e63 <unknown>
+#6 0x562353d7a82a <unknown>
+#7 0x562353d7b985 <unknown>
+#8 0x56235404b4cd <unknown>
+#9 0x56235404f5ec <unknown>
+#10 0x56235403571e <unknown>
+#11 0x562354050238 <unknown>
+#12 0x56235402a870 <unknown>
+#13 0x56235406c608 <unknown>
+#14 0x56235406c788 <unknown>
+#15 0x562354086f1d <unknown>
+#16 0x7f924a981ea7 <unknown>
+[2022-06-17 20:23:13,255] {logging_mixin.py:115} INFO - []
+[2022-06-17 20:23:13,256] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 20:23:13,270] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Job-pts, task_id=pts-Papple-iphone-xs-max-256gb-space-grau_h_6254, execution_date=20220617T201259, start_date=20220617T202307, end_date=20220617T202313
+[2022-06-17 20:23:13,283] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 20:23:13,301] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

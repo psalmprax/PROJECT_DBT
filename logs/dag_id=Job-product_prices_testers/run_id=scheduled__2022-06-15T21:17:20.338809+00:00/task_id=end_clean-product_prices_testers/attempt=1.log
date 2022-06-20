@@ -1,0 +1,31 @@
+[2022-06-16 00:55:38,570] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-product_prices_testers.end_clean-product_prices_testers scheduled__2022-06-15T21:17:20.338809+00:00 [queued]>
+[2022-06-16 00:55:38,577] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-product_prices_testers.end_clean-product_prices_testers scheduled__2022-06-15T21:17:20.338809+00:00 [queued]>
+[2022-06-16 00:55:38,577] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-16 00:55:38,577] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2022-06-16 00:55:38,577] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-16 00:55:38,588] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): end_clean-product_prices_testers> on 2022-06-15 21:17:20.338809+00:00
+[2022-06-16 00:55:38,591] {standard_task_runner.py:52} INFO - Started process 1010 to run task
+[2022-06-16 00:55:38,594] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-product_prices_testers', 'end_clean-product_prices_testers', 'scheduled__2022-06-15T21:17:20.338809+00:00', '--job-id', '86', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_test.py', '--cfg-path', '/tmp/tmponfltsoh', '--error-file', '/tmp/tmpn8y8ody6']
+[2022-06-16 00:55:38,594] {standard_task_runner.py:80} INFO - Job 86: Subtask end_clean-product_prices_testers
+[2022-06-16 00:55:38,605] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-16 00:55:38,643] {task_command.py:370} INFO - Running <TaskInstance: Job-product_prices_testers.end_clean-product_prices_testers scheduled__2022-06-15T21:17:20.338809+00:00 [running]> on host 31bbb70af43b
+[2022-06-16 00:55:38,707] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-product_prices_testers
+AIRFLOW_CTX_TASK_ID=end_clean-product_prices_testers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-15T21:17:20.338809+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-15T21:17:20.338809+00:00
+[2022-06-16 00:55:38,708] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-16 00:55:38,709] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'pkill chrome 2>/dev/null || exit 0 && rm -rf /tmp/.* 2>/dev/null || exit 0&& rm -rf /tmp/* 2>/dev/null || exit 0&& rm -rf /tmp/.p* 2>/dev/null || exit 0']
+[2022-06-16 00:55:38,717] {subprocess.py:85} INFO - Output:
+[2022-06-16 00:55:38,719] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-06-16 00:55:38,743] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Job-product_prices_testers, task_id=end_clean-product_prices_testers, execution_date=20220615T211720, start_date=20220616T005538, end_date=20220616T005538
+[2022-06-16 00:55:38,767] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-16 00:55:38,814] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

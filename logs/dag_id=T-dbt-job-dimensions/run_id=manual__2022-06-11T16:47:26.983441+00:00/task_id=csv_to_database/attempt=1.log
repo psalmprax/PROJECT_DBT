@@ -1,0 +1,30 @@
+[2022-06-11 16:47:29,511] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-dimensions.csv_to_database manual__2022-06-11T16:47:26.983441+00:00 [queued]>
+[2022-06-11 16:47:29,525] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-dimensions.csv_to_database manual__2022-06-11T16:47:26.983441+00:00 [queued]>
+[2022-06-11 16:47:29,525] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-11 16:47:29,525] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-11 16:47:29,525] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-11 16:47:29,538] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): csv_to_database> on 2022-06-11 16:47:26.983441+00:00
+[2022-06-11 16:47:29,547] {standard_task_runner.py:52} INFO - Started process 289 to run task
+[2022-06-11 16:47:29,552] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'T-dbt-job-dimensions', 'csv_to_database', 'manual__2022-06-11T16:47:26.983441+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/dbt_test.py', '--cfg-path', '/tmp/tmpq6e50n44', '--error-file', '/tmp/tmp4c5zju7t']
+[2022-06-11 16:47:29,552] {standard_task_runner.py:80} INFO - Job 30: Subtask csv_to_database
+[2022-06-11 16:47:29,605] {task_command.py:370} INFO - Running <TaskInstance: T-dbt-job-dimensions.csv_to_database manual__2022-06-11T16:47:26.983441+00:00 [running]> on host d8836eb746ac
+[2022-06-11 16:47:29,682] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuelolle@yahoo.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=T-dbt-job-dimensions
+AIRFLOW_CTX_TASK_ID=csv_to_database
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-11T16:47:26.983441+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-11T16:47:26.983441+00:00
+[2022-06-11 16:47:29,692] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-11 16:47:29,730] {postgres.py:127} INFO - Running copy expert: COPY analytics_object.users_cdc FROM STDIN, filename: /opt/airflow/dags/docker_job/data/users.csv
+[2022-06-11 16:47:29,736] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-11 16:47:29,750] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-11 16:47:29,754] {postgres.py:127} INFO - Running copy expert: COPY analytics_object.walls_cdc FROM STDIN, filename: /opt/airflow/dags/docker_job/data/walls.csv
+[2022-06-11 16:47:29,762] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-11 16:47:29,767] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-11 16:47:29,783] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=T-dbt-job-dimensions, task_id=csv_to_database, execution_date=20220611T164726, start_date=20220611T164729, end_date=20220611T164729
+[2022-06-11 16:47:29,805] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-11 16:47:29,846] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

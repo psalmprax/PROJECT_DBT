@@ -1,0 +1,825 @@
+[2022-06-15 22:49:35,743] {processor.py:153} INFO - Started process (PID=6729) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:49:35,744] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 22:49:35,744] {logging_mixin.py:115} INFO - [2022-06-15 22:49:35,744] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:49:36,579] {logging_mixin.py:115} INFO - [2022-06-15 22:49:36,570] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 238, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 206, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 22:49:36,580] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:49:36,616] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.876 seconds
+[2022-06-15 22:50:06,978] {processor.py:153} INFO - Started process (PID=6977) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:50:06,979] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 22:50:06,979] {logging_mixin.py:115} INFO - [2022-06-15 22:50:06,979] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:50:07,714] {logging_mixin.py:115} INFO - [2022-06-15 22:50:07,714] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 238, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 206, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 22:50:07,715] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:50:07,731] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.755 seconds
+[2022-06-15 22:50:38,380] {processor.py:153} INFO - Started process (PID=7222) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:50:38,381] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 22:50:38,381] {logging_mixin.py:115} INFO - [2022-06-15 22:50:38,381] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:50:39,438] {logging_mixin.py:115} INFO - [2022-06-15 22:50:39,437] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 238, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 206, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 22:50:39,439] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:50:39,491] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.114 seconds
+[2022-06-15 22:51:09,910] {processor.py:153} INFO - Started process (PID=7471) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:51:09,911] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 22:51:09,911] {logging_mixin.py:115} INFO - [2022-06-15 22:51:09,911] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:51:13,666] {logging_mixin.py:115} INFO - [2022-06-15 22:51:13,660] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 238, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 206, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 22:51:13,722] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:51:14,066] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 4.161 seconds
+[2022-06-15 22:51:22,152] {processor.py:153} INFO - Started process (PID=7548) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:51:22,152] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 22:51:22,153] {logging_mixin.py:115} INFO - [2022-06-15 22:51:22,153] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:51:52,181] {logging_mixin.py:115} INFO - [2022-06-15 22:51:52,174] {timeout.py:67} ERROR - Process timed out, PID: 7548
+[2022-06-15 22:53:25,631] {processor.py:153} INFO - Started process (PID=7689) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:53:25,634] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 22:53:25,635] {logging_mixin.py:115} INFO - [2022-06-15 22:53:25,635] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:53:55,731] {logging_mixin.py:115} INFO - [2022-06-15 22:53:55,731] {timeout.py:67} ERROR - Process timed out, PID: 7689
+[2022-06-15 22:54:06,537] {logging_mixin.py:115} INFO - DagBag import timeout for /opt/airflow/dags/docker_job/price_scale.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 7689
+[2022-06-15 22:54:07,718] {logging_mixin.py:115} INFO - [2022-06-15 22:54:06,679] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 22:54:07,866] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:55:35,934] {processor.py:153} INFO - Started process (PID=7766) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:55:35,993] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 22:55:35,993] {logging_mixin.py:115} INFO - [2022-06-15 22:55:35,993] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:56:19,617] {logging_mixin.py:115} INFO - [2022-06-15 22:56:19,614] {timeout.py:67} ERROR - Process timed out, PID: 7766
+[2022-06-15 22:56:36,367] {logging_mixin.py:115} INFO - [2022-06-15 22:56:19,675] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 12, in <module>
+    from bs4 import BeautifulSoup
+  File "/home/airflow/.local/lib/python3.7/site-packages/bs4/__init__.py", line 37, in <module>
+    from .builder import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/bs4/builder/__init__.py", line 618, in <module>
+    from . import _htmlparser
+  File "/home/airflow/.local/lib/python3.7/site-packages/bs4/builder/_htmlparser.py", line 11, in <module>
+    from html.parser import HTMLParser
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/docker_job/price_scale.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 7766
+[2022-06-15 22:56:37,938] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 22:57:33,539] {processor.py:164} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3141, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 301, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 755, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 419, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    self._dec_overflow()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 142, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 247, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 362, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 599, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 583, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres_source" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 158, in _run_file_processor
+    callback_requests=callback_requests,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 654, in process_file
+    self.update_import_errors(session, dagbag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 541, in update_import_errors
+    existing_import_error_files = [x.filename for x in session.query(errors.ImportError.filename).all()]
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2683, in all
+    return self._iter().all()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2821, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1669, in execute
+    conn = self._connection_for_bind(bind, close_with_result=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1520, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3095, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 91, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3174, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3145, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2004, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3141, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 301, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 755, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 419, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    self._dec_overflow()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 142, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 247, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 362, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 599, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 583, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres_source" to address: Temporary failure in name resolution
+
+(Background on this error at: http://sqlalche.me/e/14/e3q8)
+[2022-06-15 23:09:24,918] {processor.py:153} INFO - Started process (PID=40) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:09:24,919] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:09:24,920] {logging_mixin.py:115} INFO - [2022-06-15 23:09:24,920] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:09:28,903] {logging_mixin.py:115} INFO - [2022-06-15 23:09:28,898] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 23:09:28,903] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:09:28,994] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 4.089 seconds
+[2022-06-15 23:09:59,493] {processor.py:153} INFO - Started process (PID=286) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:09:59,494] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:09:59,495] {logging_mixin.py:115} INFO - [2022-06-15 23:09:59,495] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:10:01,503] {logging_mixin.py:115} INFO - [2022-06-15 23:10:01,500] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 23:10:01,503] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:10:01,545] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 2.055 seconds
+[2022-06-15 23:10:31,728] {processor.py:153} INFO - Started process (PID=536) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:10:31,732] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:10:31,736] {logging_mixin.py:115} INFO - [2022-06-15 23:10:31,736] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:10:33,871] {logging_mixin.py:115} INFO - [2022-06-15 23:10:33,869] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 23:10:33,872] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:10:33,951] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 2.265 seconds
+[2022-06-15 23:11:04,245] {processor.py:153} INFO - Started process (PID=788) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:11:04,246] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:11:04,246] {logging_mixin.py:115} INFO - [2022-06-15 23:11:04,246] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:11:06,041] {logging_mixin.py:115} INFO - [2022-06-15 23:11:06,038] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 23:11:06,041] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:11:06,091] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.848 seconds
+[2022-06-15 23:11:36,228] {processor.py:153} INFO - Started process (PID=1036) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:11:36,228] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:11:36,229] {logging_mixin.py:115} INFO - [2022-06-15 23:11:36,229] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:11:38,152] {logging_mixin.py:115} INFO - [2022-06-15 23:11:38,149] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 23:11:38,153] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:11:38,206] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.980 seconds
+[2022-06-15 23:12:08,590] {processor.py:153} INFO - Started process (PID=1283) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:12:08,591] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:12:08,591] {logging_mixin.py:115} INFO - [2022-06-15 23:12:08,591] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:12:10,107] {logging_mixin.py:115} INFO - [2022-06-15 23:12:10,104] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 23:12:10,108] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:12:10,157] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.570 seconds
+[2022-06-15 23:12:40,397] {processor.py:153} INFO - Started process (PID=1535) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:12:40,397] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:12:40,398] {logging_mixin.py:115} INFO - [2022-06-15 23:12:40,398] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:12:41,988] {logging_mixin.py:115} INFO - [2022-06-15 23:12:41,985] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 23:12:41,988] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:12:42,035] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.641 seconds
+[2022-06-15 23:13:12,545] {processor.py:153} INFO - Started process (PID=1785) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:13:12,545] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:13:12,546] {logging_mixin.py:115} INFO - [2022-06-15 23:13:12,546] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:13:14,168] {logging_mixin.py:115} INFO - [2022-06-15 23:13:14,165] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 23:13:14,168] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:13:14,218] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.677 seconds
+[2022-06-15 23:13:44,540] {processor.py:153} INFO - Started process (PID=2029) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:13:44,543] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:13:44,544] {logging_mixin.py:115} INFO - [2022-06-15 23:13:44,544] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:13:45,571] {logging_mixin.py:115} INFO - [2022-06-15 23:13:45,567] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 23:13:45,571] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:13:45,649] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.112 seconds
+[2022-06-15 23:14:15,994] {processor.py:153} INFO - Started process (PID=2280) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:14:15,995] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:14:15,995] {logging_mixin.py:115} INFO - [2022-06-15 23:14:15,995] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:14:17,211] {logging_mixin.py:115} INFO - [2022-06-15 23:14:17,209] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 23:14:17,212] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:14:17,288] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.298 seconds
+[2022-06-15 23:14:47,478] {processor.py:153} INFO - Started process (PID=2530) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:14:47,480] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:14:47,480] {logging_mixin.py:115} INFO - [2022-06-15 23:14:47,480] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:14:48,261] {logging_mixin.py:115} INFO - [2022-06-15 23:14:48,260] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 23:14:48,261] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:14:48,281] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.805 seconds
+[2022-06-15 23:15:18,345] {processor.py:153} INFO - Started process (PID=2771) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:15:18,346] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:15:18,346] {logging_mixin.py:115} INFO - [2022-06-15 23:15:18,346] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:15:19,092] {logging_mixin.py:115} INFO - [2022-06-15 23:15:19,091] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 257, in <module>
+    my_func=run_from_class)
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 225, in create_dag
+    task_id=f"{task_id}-{ti}",
+NameError: name 'ti' is not defined
+[2022-06-15 23:15:19,092] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:15:19,110] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.768 seconds
+[2022-06-15 23:15:40,440] {processor.py:153} INFO - Started process (PID=3016) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:15:40,441] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:15:40,441] {logging_mixin.py:115} INFO - [2022-06-15 23:15:40,441] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:15:41,209] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:15:41,261] {logging_mixin.py:115} INFO - [2022-06-15 23:15:41,261] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:15:41,274] {logging_mixin.py:115} INFO - [2022-06-15 23:15:41,274] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:15:41,285] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.849 seconds
+[2022-06-15 23:16:07,970] {processor.py:153} INFO - Started process (PID=3256) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:16:07,971] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:16:07,971] {logging_mixin.py:115} INFO - [2022-06-15 23:16:07,971] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:16:08,742] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:16:08,754] {logging_mixin.py:115} INFO - [2022-06-15 23:16:08,754] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:16:08,774] {logging_mixin.py:115} INFO - [2022-06-15 23:16:08,773] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:16:08,785] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.820 seconds
+[2022-06-15 23:16:38,834] {processor.py:153} INFO - Started process (PID=3501) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:16:38,835] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:16:38,836] {logging_mixin.py:115} INFO - [2022-06-15 23:16:38,836] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:16:39,698] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:16:39,709] {logging_mixin.py:115} INFO - [2022-06-15 23:16:39,709] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:16:39,727] {logging_mixin.py:115} INFO - [2022-06-15 23:16:39,726] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:16:39,735] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.905 seconds
+[2022-06-15 23:17:09,946] {processor.py:153} INFO - Started process (PID=3739) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:17:09,950] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:17:09,950] {logging_mixin.py:115} INFO - [2022-06-15 23:17:09,950] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:17:10,862] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:17:10,972] {logging_mixin.py:115} INFO - [2022-06-15 23:17:10,972] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:17:10,989] {logging_mixin.py:115} INFO - [2022-06-15 23:17:10,989] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:17:10,999] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.067 seconds
+[2022-06-15 23:17:41,549] {processor.py:153} INFO - Started process (PID=3984) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:17:41,550] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:17:41,551] {logging_mixin.py:115} INFO - [2022-06-15 23:17:41,551] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:17:42,301] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:17:42,324] {logging_mixin.py:115} INFO - [2022-06-15 23:17:42,324] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:17:42,340] {logging_mixin.py:115} INFO - [2022-06-15 23:17:42,340] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:17:42,349] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.806 seconds
+[2022-06-15 23:18:13,046] {processor.py:153} INFO - Started process (PID=4234) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:18:13,047] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:18:13,047] {logging_mixin.py:115} INFO - [2022-06-15 23:18:13,047] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:18:13,808] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:18:13,821] {logging_mixin.py:115} INFO - [2022-06-15 23:18:13,821] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:18:13,838] {logging_mixin.py:115} INFO - [2022-06-15 23:18:13,838] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:18:13,848] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.805 seconds
+[2022-06-15 23:18:44,053] {processor.py:153} INFO - Started process (PID=4487) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:18:44,054] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:18:44,054] {logging_mixin.py:115} INFO - [2022-06-15 23:18:44,054] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:18:44,854] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:18:44,913] {logging_mixin.py:115} INFO - [2022-06-15 23:18:44,913] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:18:44,929] {logging_mixin.py:115} INFO - [2022-06-15 23:18:44,929] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:18:44,938] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.888 seconds
+[2022-06-15 23:19:15,284] {processor.py:153} INFO - Started process (PID=4728) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:19:15,285] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:19:15,285] {logging_mixin.py:115} INFO - [2022-06-15 23:19:15,285] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:19:19,864] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:19:20,434] {logging_mixin.py:115} INFO - [2022-06-15 23:19:20,434] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:19:20,549] {logging_mixin.py:115} INFO - [2022-06-15 23:19:20,549] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:19:20,572] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 5.292 seconds
+[2022-06-15 23:20:28,042] {processor.py:153} INFO - Started process (PID=4900) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:20:28,073] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:20:28,074] {logging_mixin.py:115} INFO - [2022-06-15 23:20:28,073] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:21:01,259] {logging_mixin.py:115} INFO - [2022-06-15 23:21:01,256] {timeout.py:67} ERROR - Process timed out, PID: 4900
+[2022-06-15 23:21:25,360] {logging_mixin.py:115} INFO - DagBag import timeout for /opt/airflow/dags/docker_job/price_scale.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 4900
+[2022-06-15 23:21:26,148] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:28:10,198] {processor.py:153} INFO - Started process (PID=39) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:28:10,212] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:28:10,213] {logging_mixin.py:115} INFO - [2022-06-15 23:28:10,212] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:28:13,918] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:28:14,018] {logging_mixin.py:115} INFO - [2022-06-15 23:28:14,018] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:28:14,070] {logging_mixin.py:115} INFO - [2022-06-15 23:28:14,070] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:28:14,093] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 3.908 seconds
+[2022-06-15 23:28:44,728] {processor.py:153} INFO - Started process (PID=279) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:28:44,729] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:28:44,729] {logging_mixin.py:115} INFO - [2022-06-15 23:28:44,729] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:28:45,948] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:28:46,024] {logging_mixin.py:115} INFO - [2022-06-15 23:28:46,023] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:28:46,042] {logging_mixin.py:115} INFO - [2022-06-15 23:28:46,042] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:28:46,051] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.328 seconds
+[2022-06-15 23:29:16,166] {processor.py:153} INFO - Started process (PID=528) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:29:16,167] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:29:16,168] {logging_mixin.py:115} INFO - [2022-06-15 23:29:16,168] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:29:17,187] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:29:17,219] {logging_mixin.py:115} INFO - [2022-06-15 23:29:17,219] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:29:17,244] {logging_mixin.py:115} INFO - [2022-06-15 23:29:17,244] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:29:17,255] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.092 seconds
+[2022-06-15 23:29:47,399] {processor.py:153} INFO - Started process (PID=775) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:29:47,400] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:29:47,400] {logging_mixin.py:115} INFO - [2022-06-15 23:29:47,400] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:29:48,611] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:29:48,686] {logging_mixin.py:115} INFO - [2022-06-15 23:29:48,685] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:29:48,713] {logging_mixin.py:115} INFO - [2022-06-15 23:29:48,713] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:29:48,723] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.327 seconds
+[2022-06-15 23:30:19,021] {processor.py:153} INFO - Started process (PID=1022) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:30:19,021] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:30:19,022] {logging_mixin.py:115} INFO - [2022-06-15 23:30:19,022] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:30:20,260] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:30:20,292] {logging_mixin.py:115} INFO - [2022-06-15 23:30:20,292] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:30:20,315] {logging_mixin.py:115} INFO - [2022-06-15 23:30:20,315] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:30:20,325] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.308 seconds
+[2022-06-15 23:30:50,509] {processor.py:153} INFO - Started process (PID=1265) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:30:50,510] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:30:50,510] {logging_mixin.py:115} INFO - [2022-06-15 23:30:50,510] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:30:51,664] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:30:51,737] {logging_mixin.py:115} INFO - [2022-06-15 23:30:51,736] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:30:51,751] {logging_mixin.py:115} INFO - [2022-06-15 23:30:51,751] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:30:51,760] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.254 seconds
+[2022-06-15 23:31:21,858] {processor.py:153} INFO - Started process (PID=1512) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:31:21,859] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:31:21,859] {logging_mixin.py:115} INFO - [2022-06-15 23:31:21,859] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:31:22,986] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:31:23,019] {logging_mixin.py:115} INFO - [2022-06-15 23:31:23,018] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:31:23,041] {logging_mixin.py:115} INFO - [2022-06-15 23:31:23,041] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:31:23,052] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.197 seconds
+[2022-06-15 23:31:53,292] {processor.py:153} INFO - Started process (PID=1757) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:31:53,293] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:31:53,293] {logging_mixin.py:115} INFO - [2022-06-15 23:31:53,293] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:31:54,436] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:31:54,503] {logging_mixin.py:115} INFO - [2022-06-15 23:31:54,503] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:31:54,517] {logging_mixin.py:115} INFO - [2022-06-15 23:31:54,517] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:31:54,526] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.237 seconds
+[2022-06-15 23:32:24,678] {processor.py:153} INFO - Started process (PID=2004) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:32:24,679] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:32:24,679] {logging_mixin.py:115} INFO - [2022-06-15 23:32:24,679] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:32:25,667] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:32:25,691] {logging_mixin.py:115} INFO - [2022-06-15 23:32:25,691] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:32:25,707] {logging_mixin.py:115} INFO - [2022-06-15 23:32:25,707] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:32:25,714] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.040 seconds
+[2022-06-15 23:32:56,025] {processor.py:153} INFO - Started process (PID=2250) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:32:56,026] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:32:56,026] {logging_mixin.py:115} INFO - [2022-06-15 23:32:56,026] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:32:56,800] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:32:56,856] {logging_mixin.py:115} INFO - [2022-06-15 23:32:56,856] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:32:56,873] {logging_mixin.py:115} INFO - [2022-06-15 23:32:56,873] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:32:56,885] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.863 seconds
+[2022-06-15 23:33:27,021] {processor.py:153} INFO - Started process (PID=2501) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:33:27,022] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:33:27,022] {logging_mixin.py:115} INFO - [2022-06-15 23:33:27,022] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:33:27,781] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:33:27,792] {logging_mixin.py:115} INFO - [2022-06-15 23:33:27,792] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:33:27,810] {logging_mixin.py:115} INFO - [2022-06-15 23:33:27,810] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:33:27,819] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.801 seconds
+[2022-06-15 23:33:58,046] {processor.py:153} INFO - Started process (PID=2747) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:33:58,047] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:33:58,047] {logging_mixin.py:115} INFO - [2022-06-15 23:33:58,047] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:33:58,843] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:33:58,902] {logging_mixin.py:115} INFO - [2022-06-15 23:33:58,902] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:33:58,921] {logging_mixin.py:115} INFO - [2022-06-15 23:33:58,921] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:33:58,933] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.890 seconds
+[2022-06-15 23:34:29,146] {processor.py:153} INFO - Started process (PID=2990) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:34:29,147] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:34:29,148] {logging_mixin.py:115} INFO - [2022-06-15 23:34:29,148] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:34:29,932] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:34:29,954] {logging_mixin.py:115} INFO - [2022-06-15 23:34:29,954] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:34:29,973] {logging_mixin.py:115} INFO - [2022-06-15 23:34:29,973] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:34:29,985] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.841 seconds
+[2022-06-15 23:35:00,221] {processor.py:153} INFO - Started process (PID=3244) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:35:00,222] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:35:00,222] {logging_mixin.py:115} INFO - [2022-06-15 23:35:00,222] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:35:00,980] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:35:01,041] {logging_mixin.py:115} INFO - [2022-06-15 23:35:01,041] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:35:01,057] {logging_mixin.py:115} INFO - [2022-06-15 23:35:01,057] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:35:01,068] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.850 seconds
+[2022-06-15 23:35:31,300] {processor.py:153} INFO - Started process (PID=3495) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:35:31,301] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:35:31,301] {logging_mixin.py:115} INFO - [2022-06-15 23:35:31,301] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:35:32,054] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:35:32,065] {logging_mixin.py:115} INFO - [2022-06-15 23:35:32,065] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:35:32,103] {logging_mixin.py:115} INFO - [2022-06-15 23:35:32,103] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:35:32,116] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.819 seconds
+[2022-06-15 23:36:02,257] {processor.py:153} INFO - Started process (PID=3730) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:36:02,258] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:36:02,258] {logging_mixin.py:115} INFO - [2022-06-15 23:36:02,258] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:36:02,986] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:36:03,052] {logging_mixin.py:115} INFO - [2022-06-15 23:36:03,051] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:36:03,065] {logging_mixin.py:115} INFO - [2022-06-15 23:36:03,065] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:36:03,076] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.822 seconds
+[2022-06-15 23:36:33,210] {processor.py:153} INFO - Started process (PID=3968) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:36:33,211] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:36:33,211] {logging_mixin.py:115} INFO - [2022-06-15 23:36:33,211] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:36:33,962] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:36:33,974] {logging_mixin.py:115} INFO - [2022-06-15 23:36:33,974] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:36:33,998] {logging_mixin.py:115} INFO - [2022-06-15 23:36:33,998] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:36:34,006] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.799 seconds
+[2022-06-15 23:37:04,166] {processor.py:153} INFO - Started process (PID=4217) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:37:04,167] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:37:04,167] {logging_mixin.py:115} INFO - [2022-06-15 23:37:04,167] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:37:04,940] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:37:05,039] {logging_mixin.py:115} INFO - [2022-06-15 23:37:05,039] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:37:05,053] {logging_mixin.py:115} INFO - [2022-06-15 23:37:05,053] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:37:05,063] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.900 seconds
+[2022-06-15 23:37:35,081] {processor.py:153} INFO - Started process (PID=4455) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:37:35,082] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:37:35,082] {logging_mixin.py:115} INFO - [2022-06-15 23:37:35,082] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:37:35,973] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:37:35,986] {logging_mixin.py:115} INFO - [2022-06-15 23:37:35,986] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:37:36,004] {logging_mixin.py:115} INFO - [2022-06-15 23:37:36,004] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:37:36,014] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.936 seconds
+[2022-06-15 23:38:06,187] {processor.py:153} INFO - Started process (PID=4706) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:38:06,187] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:38:06,188] {logging_mixin.py:115} INFO - [2022-06-15 23:38:06,188] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:38:07,163] {processor.py:651} INFO - DAG(s) dict_keys(['Job-price_test_scale']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:38:07,257] {logging_mixin.py:115} INFO - [2022-06-15 23:38:07,257] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:38:07,274] {logging_mixin.py:115} INFO - [2022-06-15 23:38:07,274] {dag.py:2931} INFO - Setting next_dagrun for Job-price_test_scale to 2022-06-15T21:58:44.396122+00:00, run_after=2022-06-16T00:28:44.396122+00:00
+[2022-06-15 23:38:07,285] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.101 seconds
+[2022-06-15 23:38:32,279] {processor.py:153} INFO - Started process (PID=4949) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:38:32,281] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:38:32,282] {logging_mixin.py:115} INFO - [2022-06-15 23:38:32,282] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:38:33,208] {processor.py:651} INFO - DAG(s) dict_keys(['Job-pts']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:38:33,407] {logging_mixin.py:115} INFO - [2022-06-15 23:38:33,407] {manager.py:508} INFO - Created Permission View: can delete on DAG:Job-pts
+[2022-06-15 23:38:33,416] {logging_mixin.py:115} INFO - [2022-06-15 23:38:33,416] {manager.py:508} INFO - Created Permission View: can edit on DAG:Job-pts
+[2022-06-15 23:38:33,424] {logging_mixin.py:115} INFO - [2022-06-15 23:38:33,424] {manager.py:508} INFO - Created Permission View: can read on DAG:Job-pts
+[2022-06-15 23:38:33,424] {logging_mixin.py:115} INFO - [2022-06-15 23:38:33,424] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:38:33,436] {logging_mixin.py:115} INFO - [2022-06-15 23:38:33,436] {dag.py:2398} INFO - Creating ORM DAG for Job-pts
+[2022-06-15 23:38:33,450] {logging_mixin.py:115} INFO - [2022-06-15 23:38:33,450] {dag.py:2931} INFO - Setting next_dagrun for Job-pts to 2022-06-15T21:08:33.450129+00:00, run_after=2022-06-15T23:38:33.450129+00:00
+[2022-06-15 23:38:33,464] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 1.212 seconds
+[2022-06-15 23:39:03,679] {processor.py:153} INFO - Started process (PID=5193) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:39:03,680] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:39:03,681] {logging_mixin.py:115} INFO - [2022-06-15 23:39:03,681] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:39:04,427] {processor.py:651} INFO - DAG(s) dict_keys(['Job-pts']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:39:04,451] {logging_mixin.py:115} INFO - [2022-06-15 23:39:04,451] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:39:04,468] {logging_mixin.py:115} INFO - [2022-06-15 23:39:04,468] {dag.py:2931} INFO - Setting next_dagrun for Job-pts to 2022-06-15T23:38:33.450129+00:00, run_after=2022-06-16T02:08:33.450129+00:00
+[2022-06-15 23:39:04,476] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.800 seconds
+[2022-06-15 23:39:35,363] {processor.py:153} INFO - Started process (PID=5430) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:39:35,364] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:39:35,364] {logging_mixin.py:115} INFO - [2022-06-15 23:39:35,364] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:39:36,148] {processor.py:651} INFO - DAG(s) dict_keys(['Job-pts']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:39:36,176] {logging_mixin.py:115} INFO - [2022-06-15 23:39:36,176] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:39:36,197] {logging_mixin.py:115} INFO - [2022-06-15 23:39:36,197] {dag.py:2931} INFO - Setting next_dagrun for Job-pts to 2022-06-15T23:38:33.450129+00:00, run_after=2022-06-16T02:08:33.450129+00:00
+[2022-06-15 23:39:36,207] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.847 seconds
+[2022-06-15 23:40:06,252] {processor.py:153} INFO - Started process (PID=5672) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:40:06,254] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:40:06,254] {logging_mixin.py:115} INFO - [2022-06-15 23:40:06,254] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:40:07,066] {processor.py:651} INFO - DAG(s) dict_keys(['Job-pts']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:40:07,089] {logging_mixin.py:115} INFO - [2022-06-15 23:40:07,089] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:40:07,106] {logging_mixin.py:115} INFO - [2022-06-15 23:40:07,106] {dag.py:2931} INFO - Setting next_dagrun for Job-pts to 2022-06-15T23:38:33.450129+00:00, run_after=2022-06-16T02:08:33.450129+00:00
+[2022-06-15 23:40:07,114] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.864 seconds
+[2022-06-15 23:40:37,937] {processor.py:153} INFO - Started process (PID=5908) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:40:37,937] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:40:37,938] {logging_mixin.py:115} INFO - [2022-06-15 23:40:37,938] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:40:38,773] {processor.py:651} INFO - DAG(s) dict_keys(['Job-pts']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:40:38,847] {logging_mixin.py:115} INFO - [2022-06-15 23:40:38,847] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:40:38,869] {logging_mixin.py:115} INFO - [2022-06-15 23:40:38,869] {dag.py:2931} INFO - Setting next_dagrun for Job-pts to 2022-06-15T23:38:33.450129+00:00, run_after=2022-06-16T02:08:33.450129+00:00
+[2022-06-15 23:40:38,878] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.944 seconds
+[2022-06-15 23:40:53,636] {processor.py:153} INFO - Started process (PID=6135) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:40:53,636] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:40:53,636] {logging_mixin.py:115} INFO - [2022-06-15 23:40:53,636] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:40:54,398] {processor.py:651} INFO - DAG(s) dict_keys(['Job-pts']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:40:54,444] {logging_mixin.py:115} INFO - [2022-06-15 23:40:54,444] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:40:54,461] {logging_mixin.py:115} INFO - [2022-06-15 23:40:54,461] {dag.py:2931} INFO - Setting next_dagrun for Job-pts to 2022-06-15T23:38:33.450129+00:00, run_after=2022-06-16T02:08:33.450129+00:00
+[2022-06-15 23:40:54,473] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.841 seconds
+[2022-06-15 23:41:24,962] {processor.py:153} INFO - Started process (PID=6383) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:41:24,963] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:41:24,963] {logging_mixin.py:115} INFO - [2022-06-15 23:41:24,963] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:41:25,708] {processor.py:651} INFO - DAG(s) dict_keys(['Job-pts']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:41:25,737] {logging_mixin.py:115} INFO - [2022-06-15 23:41:25,737] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:41:25,758] {logging_mixin.py:115} INFO - [2022-06-15 23:41:25,758] {dag.py:2931} INFO - Setting next_dagrun for Job-pts to 2022-06-15T23:38:33.450129+00:00, run_after=2022-06-16T02:08:33.450129+00:00
+[2022-06-15 23:41:25,769] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 0.810 seconds
+[2022-06-15 23:41:55,953] {processor.py:153} INFO - Started process (PID=6621) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:41:55,954] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:41:55,954] {logging_mixin.py:115} INFO - [2022-06-15 23:41:55,954] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:41:57,798] {processor.py:651} INFO - DAG(s) dict_keys(['Job-pts']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:41:58,057] {logging_mixin.py:115} INFO - [2022-06-15 23:41:58,057] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:41:58,090] {logging_mixin.py:115} INFO - [2022-06-15 23:41:58,090] {dag.py:2931} INFO - Setting next_dagrun for Job-pts to 2022-06-15T23:38:33.450129+00:00, run_after=2022-06-16T02:08:33.450129+00:00
+[2022-06-15 23:41:58,100] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 2.151 seconds
+[2022-06-15 23:42:28,470] {processor.py:153} INFO - Started process (PID=6870) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:42:28,471] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:42:28,472] {logging_mixin.py:115} INFO - [2022-06-15 23:42:28,472] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:42:47,385] {processor.py:651} INFO - DAG(s) dict_keys(['Job-pts']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:42:47,891] {logging_mixin.py:115} INFO - [2022-06-15 23:42:47,891] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:42:48,013] {logging_mixin.py:115} INFO - [2022-06-15 23:42:48,007] {dag.py:2931} INFO - Setting next_dagrun for Job-pts to 2022-06-15T23:38:33.450129+00:00, run_after=2022-06-16T02:08:33.450129+00:00
+[2022-06-15 23:42:48,115] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 19.651 seconds
+[2022-06-15 23:43:58,219] {processor.py:153} INFO - Started process (PID=7009) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:43:58,341] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:43:58,341] {logging_mixin.py:115} INFO - [2022-06-15 23:43:58,341] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:44:28,959] {logging_mixin.py:115} INFO - [2022-06-15 23:44:28,956] {timeout.py:67} ERROR - Process timed out, PID: 7009
+[2022-06-15 23:44:44,471] {logging_mixin.py:115} INFO - DagBag import timeout for /opt/airflow/dags/docker_job/price_scale.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 7009
+[2022-06-15 23:44:44,547] {processor.py:651} INFO - DAG(s) dict_keys(['Job-pts']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:44:59,978] {processor.py:153} INFO - Started process (PID=7092) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:44:59,982] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:44:59,983] {logging_mixin.py:115} INFO - [2022-06-15 23:44:59,983] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:45:31,136] {logging_mixin.py:115} INFO - [2022-06-15 23:45:31,132] {timeout.py:67} ERROR - Process timed out, PID: 7092
+[2022-06-15 23:45:44,700] {logging_mixin.py:115} INFO - DagBag import timeout for /opt/airflow/dags/docker_job/price_scale.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 7092
+[2022-06-15 23:45:44,939] {processor.py:651} INFO - DAG(s) dict_keys(['Job-pts']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:46:16,329] {processor.py:153} INFO - Started process (PID=7247) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:46:16,635] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:46:17,055] {logging_mixin.py:115} INFO - [2022-06-15 23:46:16,643] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:46:48,450] {logging_mixin.py:115} INFO - [2022-06-15 23:46:48,366] {timeout.py:67} ERROR - Process timed out, PID: 7247
+[2022-06-15 23:46:49,249] {logging_mixin.py:115} INFO - [2022-06-15 23:46:48,510] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 13, in <module>
+    from selenium import webdriver
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 818, in get_code
+  File "<frozen importlib._bootstrap_external>", line 917, in get_data
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/docker_job/price_scale.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 7247
+[2022-06-15 23:46:49,347] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:50:25,543] {processor.py:153} INFO - Started process (PID=7317) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:50:25,851] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:50:25,862] {logging_mixin.py:115} INFO - [2022-06-15 23:50:25,862] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:50:56,471] {logging_mixin.py:115} INFO - [2022-06-15 23:50:56,041] {timeout.py:67} ERROR - Process timed out, PID: 7317
+[2022-06-15 23:50:57,930] {logging_mixin.py:115} INFO - [2022-06-15 23:50:56,666] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 13, in <module>
+    from selenium import webdriver
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/__init__.py", line 18, in <module>
+    from .firefox.webdriver import WebDriver as Firefox  # noqa
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 29, in <module>
+    from .firefox_profile import FirefoxProfile
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/firefox/firefox_profile.py", line 29, in <module>
+    from xml.dom import minidom
+  File "/usr/local/lib/python3.7/xml/dom/minidom.py", line 22, in <module>
+    from xml.dom.minicompat import *
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/docker_job/price_scale.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 7317
+[2022-06-15 23:50:59,425] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:51:30,888] {processor.py:153} INFO - Started process (PID=7360) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:51:31,059] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:51:31,617] {logging_mixin.py:115} INFO - [2022-06-15 23:51:31,383] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:52:03,999] {logging_mixin.py:115} INFO - [2022-06-15 23:52:02,819] {timeout.py:67} ERROR - Process timed out, PID: 7360
+[2022-06-15 23:52:06,921] {logging_mixin.py:115} INFO - [2022-06-15 23:52:04,212] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 13, in <module>
+    from selenium import webdriver
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/__init__.py", line 18, in <module>
+    from .firefox.webdriver import WebDriver as Firefox  # noqa
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 26, in <module>
+    from selenium.webdriver.remote.webdriver import WebDriver as RemoteWebDriver
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 51, in <module>
+    from selenium.webdriver.common.options import BaseOptions
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/common/options.py", line 19, in <module>
+    from selenium.webdriver.common.proxy import Proxy
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 963, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 906, in _find_spec
+  File "<frozen importlib._bootstrap>", line 794, in find_spec
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/docker_job/price_scale.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 7360
+[2022-06-15 23:52:08,391] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:55:13,378] {processor.py:161} INFO - Processing /opt/airflow/dags/docker_job/price_scale.py took 222.711 seconds
+[2022-06-15 23:56:06,314] {processor.py:153} INFO - Started process (PID=7422) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:56:06,354] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:56:06,433] {logging_mixin.py:115} INFO - [2022-06-15 23:56:06,368] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:56:37,121] {logging_mixin.py:115} INFO - [2022-06-15 23:56:36,778] {timeout.py:67} ERROR - Process timed out, PID: 7422
+[2022-06-15 23:56:37,307] {logging_mixin.py:115} INFO - DagBag import timeout for /opt/airflow/dags/docker_job/price_scale.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 7422
+[2022-06-15 23:56:39,788] {processor.py:651} INFO - DAG(s) dict_keys(['Job-pts']) retrieved from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:56:58,185] {logging_mixin.py:115} INFO - [2022-06-15 23:56:58,163] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-15 23:59:41,067] {processor.py:153} INFO - Started process (PID=7456) to work on /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-15 23:59:41,071] {processor.py:641} INFO - Processing file /opt/airflow/dags/docker_job/price_scale.py for tasks to queue
+[2022-06-15 23:59:41,091] {logging_mixin.py:115} INFO - [2022-06-15 23:59:41,091] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/docker_job/price_scale.py
+[2022-06-16 00:00:15,371] {logging_mixin.py:115} INFO - [2022-06-16 00:00:15,075] {timeout.py:67} ERROR - Process timed out, PID: 7456
+[2022-06-16 00:00:16,850] {logging_mixin.py:115} INFO - [2022-06-16 00:00:15,383] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/docker_job/price_scale.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/docker_job/price_scale.py", line 12, in <module>
+    from bs4 import BeautifulSoup
+  File "/home/airflow/.local/lib/python3.7/site-packages/bs4/__init__.py", line 37, in <module>
+    from .builder import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/bs4/builder/__init__.py", line 627, in <module>
+    from . import _lxml
+  File "/home/airflow/.local/lib/python3.7/site-packages/bs4/builder/_lxml.py", line 16, in <module>
+    from lxml import etree
+  File "src/lxml/etree.pyx", line 74, in init lxml.etree
+  File "<frozen importlib._bootstrap>", line 416, in parent
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/docker_job/price_scale.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 7456
+[2022-06-16 00:00:16,860] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/docker_job/price_scale.py

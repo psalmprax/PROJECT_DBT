@@ -1,0 +1,31 @@
+[2022-06-19 21:19:56,255] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-dimensions.dbt_cleanup-dimensions scheduled__2022-06-19T19:19:09.698950+00:00 [queued]>
+[2022-06-19 21:19:56,263] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-dimensions.dbt_cleanup-dimensions scheduled__2022-06-19T19:19:09.698950+00:00 [queued]>
+[2022-06-19 21:19:56,263] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 21:19:56,263] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-19 21:19:56,263] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 21:19:56,276] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): dbt_cleanup-dimensions> on 2022-06-19 19:19:09.698950+00:00
+[2022-06-19 21:19:56,281] {standard_task_runner.py:52} INFO - Started process 732 to run task
+[2022-06-19 21:19:56,285] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'T-dbt-job-dimensions', 'dbt_cleanup-dimensions', 'scheduled__2022-06-19T19:19:09.698950+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/dbt_model.py', '--cfg-path', '/tmp/tmprkvjikcd', '--error-file', '/tmp/tmpbeylm2li']
+[2022-06-19 21:19:56,285] {standard_task_runner.py:80} INFO - Job 32: Subtask dbt_cleanup-dimensions
+[2022-06-19 21:19:56,297] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-19 21:19:56,337] {task_command.py:370} INFO - Running <TaskInstance: T-dbt-job-dimensions.dbt_cleanup-dimensions scheduled__2022-06-19T19:19:09.698950+00:00 [running]> on host 7cbff6e51e2a
+[2022-06-19 21:19:56,402] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuelolle@yahoo.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=T-dbt-job-dimensions
+AIRFLOW_CTX_TASK_ID=dbt_cleanup-dimensions
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-19T19:19:09.698950+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-19T19:19:09.698950+00:00
+[2022-06-19 21:19:56,403] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-19 21:19:56,403] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm -rf /tmp/dimensions && rm -rf /tmp/tmp* 2>/dev/null || exit 0']
+[2022-06-19 21:19:56,413] {subprocess.py:85} INFO - Output:
+[2022-06-19 21:19:56,523] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-06-19 21:19:56,551] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=T-dbt-job-dimensions, task_id=dbt_cleanup-dimensions, execution_date=20220619T191909, start_date=20220619T211956, end_date=20220619T211956
+[2022-06-19 21:19:56,577] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-19 21:19:56,605] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

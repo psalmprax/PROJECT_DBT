@@ -1,0 +1,33 @@
+[2022-06-12 19:30:42,192] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-cdc_load.csv_to_database scheduled__2022-06-12T17:30:39.272850+00:00 [queued]>
+[2022-06-12 19:30:42,207] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-cdc_load.csv_to_database scheduled__2022-06-12T17:30:39.272850+00:00 [queued]>
+[2022-06-12 19:30:42,207] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-12 19:30:42,207] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-12 19:30:42,207] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-12 19:30:42,226] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): csv_to_database> on 2022-06-12 17:30:39.272850+00:00
+[2022-06-12 19:30:42,248] {standard_task_runner.py:52} INFO - Started process 5669 to run task
+[2022-06-12 19:30:42,251] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'T-dbt-job-cdc_load', 'csv_to_database', 'scheduled__2022-06-12T17:30:39.272850+00:00', '--job-id', '217', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/dbt_test.py', '--cfg-path', '/tmp/tmpmk346aqh', '--error-file', '/tmp/tmph73bcx2j']
+[2022-06-12 19:30:42,252] {standard_task_runner.py:80} INFO - Job 217: Subtask csv_to_database
+[2022-06-12 19:30:42,272] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-12 19:30:42,324] {task_command.py:370} INFO - Running <TaskInstance: T-dbt-job-cdc_load.csv_to_database scheduled__2022-06-12T17:30:39.272850+00:00 [running]> on host e926c0944008
+[2022-06-12 19:30:42,408] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuelolle@yahoo.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=T-dbt-job-cdc_load
+AIRFLOW_CTX_TASK_ID=csv_to_database
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-12T17:30:39.272850+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-12T17:30:39.272850+00:00
+[2022-06-12 19:30:42,421] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-12 19:30:42,427] {postgres.py:127} INFO - Running copy expert: COPY analytics_stage.users_cdc FROM STDIN, filename: /opt/airflow/dags/docker_job/data/users.csv
+[2022-06-12 19:30:42,435] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-12 19:30:42,454] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-12 19:30:42,460] {postgres.py:127} INFO - Running copy expert: COPY analytics_stage.walls_cdc FROM STDIN, filename: /opt/airflow/dags/docker_job/data/walls.csv
+[2022-06-12 19:30:42,468] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-12 19:30:42,474] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-12 19:30:42,489] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=T-dbt-job-cdc_load, task_id=csv_to_database, execution_date=20220612T173039, start_date=20220612T193042, end_date=20220612T193042
+[2022-06-12 19:30:42,508] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-12 19:30:42,560] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

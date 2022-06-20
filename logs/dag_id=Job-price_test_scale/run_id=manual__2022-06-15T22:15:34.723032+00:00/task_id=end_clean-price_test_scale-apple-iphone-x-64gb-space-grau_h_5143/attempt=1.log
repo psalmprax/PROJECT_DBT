@@ -1,0 +1,28 @@
+[2022-06-15 22:16:18,351] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-price_test_scale.end_clean-price_test_scale-apple-iphone-x-64gb-space-grau_h_5143 manual__2022-06-15T22:15:34.723032+00:00 [queued]>
+[2022-06-15 22:16:18,361] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-price_test_scale.end_clean-price_test_scale-apple-iphone-x-64gb-space-grau_h_5143 manual__2022-06-15T22:15:34.723032+00:00 [queued]>
+[2022-06-15 22:16:18,361] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-15 22:16:18,361] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2022-06-15 22:16:18,361] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-15 22:16:18,372] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): end_clean-price_test_scale-apple-iphone-x-64gb-space-grau_h_5143> on 2022-06-15 22:15:34.723032+00:00
+[2022-06-15 22:16:18,376] {standard_task_runner.py:52} INFO - Started process 1931 to run task
+[2022-06-15 22:16:18,379] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-price_test_scale', 'end_clean-price_test_scale-apple-iphone-x-64gb-space-grau_h_5143', 'manual__2022-06-15T22:15:34.723032+00:00', '--job-id', '57', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_test_scale.py', '--cfg-path', '/tmp/tmp6qy2xs8_', '--error-file', '/tmp/tmpyk6jcqnf']
+[2022-06-15 22:16:18,380] {standard_task_runner.py:80} INFO - Job 57: Subtask end_clean-price_test_scale-apple-iphone-x-64gb-space-grau_h_5143
+[2022-06-15 22:16:18,429] {task_command.py:370} INFO - Running <TaskInstance: Job-price_test_scale.end_clean-price_test_scale-apple-iphone-x-64gb-space-grau_h_5143 manual__2022-06-15T22:15:34.723032+00:00 [running]> on host 3c1ac2e19971
+[2022-06-15 22:16:18,493] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-price_test_scale
+AIRFLOW_CTX_TASK_ID=end_clean-price_test_scale-apple-iphone-x-64gb-space-grau_h_5143
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-15T22:15:34.723032+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-15T22:15:34.723032+00:00
+[2022-06-15 22:16:18,494] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-15 22:16:18,494] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'pkill chrome 2>/dev/null || exit 0 && rm -rf /tmp/.* 2>/dev/null || exit 0&& rm -rf /tmp/* 2>/dev/null || exit 0&& rm -rf /tmp/.p* 2>/dev/null || exit 0']
+[2022-06-15 22:16:18,502] {subprocess.py:85} INFO - Output:
+[2022-06-15 22:16:18,504] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-06-15 22:16:18,530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Job-price_test_scale, task_id=end_clean-price_test_scale-apple-iphone-x-64gb-space-grau_h_5143, execution_date=20220615T221534, start_date=20220615T221618, end_date=20220615T221618
+[2022-06-15 22:16:18,552] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-15 22:16:18,583] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

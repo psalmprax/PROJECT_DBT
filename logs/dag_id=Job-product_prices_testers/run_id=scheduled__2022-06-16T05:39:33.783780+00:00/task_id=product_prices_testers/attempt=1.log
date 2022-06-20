@@ -1,0 +1,91 @@
+[2022-06-16 08:09:43,306] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-product_prices_testers.product_prices_testers scheduled__2022-06-16T05:39:33.783780+00:00 [queued]>
+[2022-06-16 08:09:43,314] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Job-product_prices_testers.product_prices_testers scheduled__2022-06-16T05:39:33.783780+00:00 [queued]>
+[2022-06-16 08:09:43,314] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-16 08:09:43,314] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2022-06-16 08:09:43,314] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-16 08:09:43,325] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): product_prices_testers> on 2022-06-16 05:39:33.783780+00:00
+[2022-06-16 08:09:43,329] {standard_task_runner.py:52} INFO - Started process 6377 to run task
+[2022-06-16 08:09:43,406] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Job-product_prices_testers', 'product_prices_testers', 'scheduled__2022-06-16T05:39:33.783780+00:00', '--job-id', '146', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/price_test.py', '--cfg-path', '/tmp/tmpzioyi35o', '--error-file', '/tmp/tmpxw84qeet']
+[2022-06-16 08:09:43,406] {standard_task_runner.py:80} INFO - Job 146: Subtask product_prices_testers
+[2022-06-16 08:09:43,795] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-16 08:09:44,364] {task_command.py:370} INFO - Running <TaskInstance: Job-product_prices_testers.product_prices_testers scheduled__2022-06-16T05:39:33.783780+00:00 [running]> on host 31bbb70af43b
+[2022-06-16 08:09:44,882] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuel.momoh-olle@asgoodasnew.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Job-product_prices_testers
+AIRFLOW_CTX_TASK_ID=product_prices_testers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T05:39:33.783780+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T05:39:33.783780+00:00
+[2022-06-16 08:09:44,885] {logging_mixin.py:115} INFO - /opt/airflow
+[2022-06-16 08:12:34,356] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/docker_job/price_test.py", line 124, in run_from_class
+    ppd = ProductPriceData(driver=webdriver.Chrome(executable_path="dags/docker_job/chromedriver", options=options))
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    service_log_path, service, keep_alive)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chromium/webdriver.py", line 98, in __init__
+    options=options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 275, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 365, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+Stacktrace:
+#0 0x55a2c2cbcf33 <unknown>
+#1 0x55a2c2a06faf <unknown>
+#2 0x55a2c29f5209 <unknown>
+#3 0x55a2c2a2da79 <unknown>
+#4 0x55a2c2a299d0 <unknown>
+#5 0x55a2c2a25d5a <unknown>
+#6 0x55a2c2a60d3a <unknown>
+#7 0x55a2c2a5ae63 <unknown>
+#8 0x55a2c2a3082a <unknown>
+#9 0x55a2c2a31985 <unknown>
+#10 0x55a2c2d014cd <unknown>
+#11 0x55a2c2d055ec <unknown>
+#12 0x55a2c2ceb71e <unknown>
+#13 0x55a2c2d06238 <unknown>
+#14 0x55a2c2ce0870 <unknown>
+#15 0x55a2c2d22608 <unknown>
+#16 0x55a2c2d22788 <unknown>
+#17 0x55a2c2d3cf1d <unknown>
+#18 0x7faaffbe2ea7 <unknown>
+
+[2022-06-16 08:12:36,006] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=Job-product_prices_testers, task_id=product_prices_testers, execution_date=20220616T053933, start_date=20220616T080943, end_date=20220616T081236
+[2022-06-16 08:12:37,132] {standard_task_runner.py:97} ERROR - Failed to execute job 146 for task product_prices_testers (Message: chrome not reachable
+Stacktrace:
+#0 0x55a2c2cbcf33 <unknown>
+#1 0x55a2c2a06faf <unknown>
+#2 0x55a2c29f5209 <unknown>
+#3 0x55a2c2a2da79 <unknown>
+#4 0x55a2c2a299d0 <unknown>
+#5 0x55a2c2a25d5a <unknown>
+#6 0x55a2c2a60d3a <unknown>
+#7 0x55a2c2a5ae63 <unknown>
+#8 0x55a2c2a3082a <unknown>
+#9 0x55a2c2a31985 <unknown>
+#10 0x55a2c2d014cd <unknown>
+#11 0x55a2c2d055ec <unknown>
+#12 0x55a2c2ceb71e <unknown>
+#13 0x55a2c2d06238 <unknown>
+#14 0x55a2c2ce0870 <unknown>
+#15 0x55a2c2d22608 <unknown>
+#16 0x55a2c2d22788 <unknown>
+#17 0x55a2c2d3cf1d <unknown>
+#18 0x7faaffbe2ea7 <unknown>
+; 6377)
+[2022-06-16 08:12:40,737] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-16 08:13:24,930] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

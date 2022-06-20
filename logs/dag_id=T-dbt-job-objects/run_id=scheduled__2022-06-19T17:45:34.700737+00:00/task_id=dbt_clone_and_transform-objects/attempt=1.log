@@ -1,0 +1,38 @@
+[2022-06-19 19:46:05,144] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-objects.dbt_clone_and_transform-objects scheduled__2022-06-19T17:45:34.700737+00:00 [queued]>
+[2022-06-19 19:46:05,154] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-objects.dbt_clone_and_transform-objects scheduled__2022-06-19T17:45:34.700737+00:00 [queued]>
+[2022-06-19 19:46:05,154] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 19:46:05,155] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-19 19:46:05,155] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-19 19:46:05,169] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): dbt_clone_and_transform-objects> on 2022-06-19 17:45:34.700737+00:00
+[2022-06-19 19:46:05,175] {standard_task_runner.py:52} INFO - Started process 81 to run task
+[2022-06-19 19:46:05,179] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'T-dbt-job-objects', 'dbt_clone_and_transform-objects', 'scheduled__2022-06-19T17:45:34.700737+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/dbt_model.py', '--cfg-path', '/tmp/tmprjpvley1', '--error-file', '/tmp/tmpqgqkmnsl']
+[2022-06-19 19:46:05,180] {standard_task_runner.py:80} INFO - Job 10: Subtask dbt_clone_and_transform-objects
+[2022-06-19 19:46:05,196] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-19 19:46:05,242] {task_command.py:370} INFO - Running <TaskInstance: T-dbt-job-objects.dbt_clone_and_transform-objects scheduled__2022-06-19T17:45:34.700737+00:00 [running]> on host 7cbff6e51e2a
+[2022-06-19 19:46:05,319] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuelolle@yahoo.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=T-dbt-job-objects
+AIRFLOW_CTX_TASK_ID=dbt_clone_and_transform-objects
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-19T17:45:34.700737+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-19T17:45:34.700737+00:00
+[2022-06-19 19:46:05,319] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-19 19:46:05,320] {subprocess.py:74} INFO - Running command: ['bash', '-c', " rm -rf /tmp/objects && mkdir /tmp/objects                            && cp -r /tmp/dbt /tmp/objects/dbt                             && cd /tmp/objects/dbt && python3 -m venv venv                             && export PIP_USER=false                             && *** /tmp/objects/dbt/venv/bin/activate                             && pip  install --quiet --upgrade pip setuptools                             && pip3 install --quiet 'MarkupSafe<=2.0.1' 'dbt-postgres' 'dbt-core'                             && dbt --version && deactivate                             && cd /tmp/objects/dbt && *** /tmp/objects/dbt/venv/bin/activate                             && dbt deps --profiles-dir /tmp/objects/dbt/ && dbt seed --profiles-dir /tmp/objects/dbt/                             && dbt run --models objects --profiles-dir /tmp/objects/dbt/"]
+[2022-06-19 19:46:05,331] {subprocess.py:85} INFO - Output:
+[2022-06-19 19:46:05,518] {subprocess.py:92} INFO - Error: [Errno 2] No such file or directory
+[2022-06-19 19:46:05,522] {subprocess.py:96} INFO - Command exited with return code 1
+[2022-06-19 19:46:05,540] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 195, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-06-19 19:46:05,542] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=T-dbt-job-objects, task_id=dbt_clone_and_transform-objects, execution_date=20220619T174534, start_date=20220619T194605, end_date=20220619T194605
+[2022-06-19 19:46:05,554] {standard_task_runner.py:97} ERROR - Failed to execute job 10 for task dbt_clone_and_transform-objects (Bash command failed. The command returned a non-zero exit code 1.; 81)
+[2022-06-19 19:46:05,593] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-19 19:46:05,630] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,86 @@
+[2022-06-13 13:37:25,297] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-example.dbt_clone_and_transform-example scheduled__2022-06-13T11:37:24.181140+00:00 [queued]>
+[2022-06-13 13:37:25,305] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: T-dbt-job-example.dbt_clone_and_transform-example scheduled__2022-06-13T11:37:24.181140+00:00 [queued]>
+[2022-06-13 13:37:25,305] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-13 13:37:25,305] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-13 13:37:25,306] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-13 13:37:25,318] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): dbt_clone_and_transform-example> on 2022-06-13 11:37:24.181140+00:00
+[2022-06-13 13:37:25,323] {standard_task_runner.py:52} INFO - Started process 927 to run task
+[2022-06-13 13:37:25,326] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'T-dbt-job-example', 'dbt_clone_and_transform-example', 'scheduled__2022-06-13T11:37:24.181140+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/docker_job/dbt_model.py', '--cfg-path', '/tmp/tmpoh6b6wb9', '--error-file', '/tmp/tmp0bfzhlq5']
+[2022-06-13 13:37:25,327] {standard_task_runner.py:80} INFO - Job 108: Subtask dbt_clone_and_transform-example
+[2022-06-13 13:37:25,338] {warnings.py:110} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:525: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-06-13 13:37:25,378] {task_command.py:370} INFO - Running <TaskInstance: T-dbt-job-example.dbt_clone_and_transform-example scheduled__2022-06-13T11:37:24.181140+00:00 [running]> on host 8425e4f159a6
+[2022-06-13 13:37:25,442] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=samuelolle@yahoo.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=T-dbt-job-example
+AIRFLOW_CTX_TASK_ID=dbt_clone_and_transform-example
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-13T11:37:24.181140+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-13T11:37:24.181140+00:00
+[2022-06-13 13:37:25,443] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-13 13:37:25,444] {subprocess.py:74} INFO - Running command: ['bash', '-c', " rm -rf /tmp/example && mkdir /tmp/example                            && cp -r /tmp/dbt /tmp/example/dbt                             && cd /tmp/example/dbt && python3 -m venv venv                             && export PIP_USER=false                             && *** /tmp/example/dbt/venv/bin/activate                             && pip  install --quiet --upgrade pip setuptools                             && pip3 install --quiet 'MarkupSafe<=2.0.1' 'dbt-postgres' 'dbt-core'                             && dbt --version && deactivate                             && cd /tmp/example/dbt && *** /tmp/example/dbt/venv/bin/activate                             && dbt deps --profiles-dir /tmp/example/dbt/ && dbt seed --profiles-dir /tmp/example/dbt/                             && dbt run --models example --profiles-dir /tmp/example/dbt/"]
+[2022-06-13 13:37:25,455] {subprocess.py:85} INFO - Output:
+[2022-06-13 13:37:57,939] {subprocess.py:92} INFO - Core:
+[2022-06-13 13:37:57,939] {subprocess.py:92} INFO -   - installed: 1.1.0
+[2022-06-13 13:37:57,939] {subprocess.py:92} INFO -   - latest:    1.1.0 - [32mUp to date![0m
+[2022-06-13 13:37:57,939] {subprocess.py:92} INFO - 
+[2022-06-13 13:37:57,939] {subprocess.py:92} INFO - Plugins:
+[2022-06-13 13:37:57,939] {subprocess.py:92} INFO -   - postgres: 1.1.0 - [32mUp to date![0m
+[2022-06-13 13:38:00,587] {subprocess.py:92} INFO - [0m13:38:00  Running with dbt=1.1.0
+[2022-06-13 13:38:00,588] {subprocess.py:92} INFO - [0m13:38:00  Warning: No packages were found in packages.yml
+[2022-06-13 13:38:03,276] {subprocess.py:92} INFO - [0m13:38:03  Running with dbt=1.1.0
+[2022-06-13 13:38:03,289] {subprocess.py:92} INFO - [0m13:38:03  Partial parse save file not found. Starting full parse.
+[2022-06-13 13:38:03,892] {subprocess.py:92} INFO - [0m13:38:03  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any re***s.
+[2022-06-13 13:38:03,893] {subprocess.py:92} INFO - There are 1 unused configuration paths:
+[2022-06-13 13:38:03,893] {subprocess.py:92} INFO - - seeds.SAM
+[2022-06-13 13:38:03,893] {subprocess.py:92} INFO - 
+[2022-06-13 13:38:03,904] {subprocess.py:92} INFO - [0m13:38:03  Found 7 models, 6 tests, 0 snapshots, 0 analyses, 172 macros, 6 operations, 0 seed files, 4 ***s, 0 exposures, 0 metrics
+[2022-06-13 13:38:03,905] {subprocess.py:92} INFO - [0m13:38:03
+[2022-06-13 13:38:03,906] {subprocess.py:92} INFO - [0m13:38:03  [WARNING]: Nothing to do. Try checking your model configs and model specification args
+[2022-06-13 13:38:03,911] {subprocess.py:92} INFO - [0m13:38:03
+[2022-06-13 13:38:03,912] {subprocess.py:92} INFO - [0m13:38:03  Completed successfully
+[2022-06-13 13:38:03,912] {subprocess.py:92} INFO - [0m13:38:03
+[2022-06-13 13:38:03,912] {subprocess.py:92} INFO - [0m13:38:03  Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+[2022-06-13 13:38:06,902] {subprocess.py:92} INFO - [0m13:38:06  Running with dbt=1.1.0
+[2022-06-13 13:38:06,937] {subprocess.py:92} INFO - [0m13:38:06  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any re***s.
+[2022-06-13 13:38:06,937] {subprocess.py:92} INFO - There are 1 unused configuration paths:
+[2022-06-13 13:38:06,937] {subprocess.py:92} INFO - - seeds.SAM
+[2022-06-13 13:38:06,938] {subprocess.py:92} INFO - 
+[2022-06-13 13:38:06,950] {subprocess.py:92} INFO - [0m13:38:06  Found 7 models, 6 tests, 0 snapshots, 0 analyses, 172 macros, 6 operations, 0 seed files, 4 ***s, 0 exposures, 0 metrics
+[2022-06-13 13:38:06,952] {subprocess.py:92} INFO - [0m13:38:06
+[2022-06-13 13:38:07,031] {subprocess.py:92} INFO - [0m13:38:07  Concurrency: 4 threads (target='dev')
+[2022-06-13 13:38:07,031] {subprocess.py:92} INFO - [0m13:38:07
+[2022-06-13 13:38:07,036] {subprocess.py:92} INFO - [0m13:38:07  1 of 2 START table model analytics_objects.my_first_dbt_model .................. [RUN]
+[2022-06-13 13:38:07,116] {subprocess.py:92} INFO - [0m13:38:07  1 of 2 OK created table model analytics_objects.my_first_dbt_model ............. [SELECT 2 in 0.08s]
+[2022-06-13 13:38:07,118] {subprocess.py:92} INFO - [0m13:38:07  2 of 2 START view model analytics_objects.my_second_dbt_model .................. [RUN]
+[2022-06-13 13:38:07,159] {subprocess.py:92} INFO - [0m13:38:07  2 of 2 OK created view model analytics_objects.my_second_dbt_model ............. [CREATE VIEW in 0.04s]
+[2022-06-13 13:38:07,247] {subprocess.py:92} INFO - [0m13:38:07
+[2022-06-13 13:38:07,247] {subprocess.py:92} INFO - [0m13:38:07  Running 6 on-run-end hooks
+[2022-06-13 13:38:07,253] {subprocess.py:92} INFO - [0m13:38:07  1 of 6 START hook: SAM.on-run-end.0 ............................................ [RUN]
+[2022-06-13 13:38:07,256] {subprocess.py:92} INFO - [0m13:38:07  1 of 6 OK hook: SAM.on-run-end.0 ............................................... [ALTER DEFAULT PRIVILEGES in 0.00s]
+[2022-06-13 13:38:07,261] {subprocess.py:92} INFO - [0m13:38:07  2 of 6 START hook: SAM.on-run-end.1 ............................................ [RUN]
+[2022-06-13 13:38:07,264] {subprocess.py:92} INFO - [0m13:38:07  2 of 6 OK hook: SAM.on-run-end.1 ............................................... [ALTER DEFAULT PRIVILEGES in 0.00s]
+[2022-06-13 13:38:07,268] {subprocess.py:92} INFO - [0m13:38:07  3 of 6 START hook: SAM.on-run-end.2 ............................................ [RUN]
+[2022-06-13 13:38:07,270] {subprocess.py:92} INFO - [0m13:38:07  3 of 6 OK hook: SAM.on-run-end.2 ............................................... [ALTER DEFAULT PRIVILEGES in 0.00s]
+[2022-06-13 13:38:07,273] {subprocess.py:92} INFO - [0m13:38:07  4 of 6 START hook: SAM.on-run-end.3 ............................................ [RUN]
+[2022-06-13 13:38:07,275] {subprocess.py:92} INFO - [0m13:38:07  4 of 6 OK hook: SAM.on-run-end.3 ............................................... [ALTER DEFAULT PRIVILEGES in 0.00s]
+[2022-06-13 13:38:07,280] {subprocess.py:92} INFO - [0m13:38:07  5 of 6 START hook: SAM.on-run-end.4 ............................................ [RUN]
+[2022-06-13 13:38:07,282] {subprocess.py:92} INFO - [0m13:38:07  5 of 6 OK hook: SAM.on-run-end.4 ............................................... [ALTER DEFAULT PRIVILEGES in 0.00s]
+[2022-06-13 13:38:07,285] {subprocess.py:92} INFO - [0m13:38:07  6 of 6 START hook: SAM.on-run-end.5 ............................................ [RUN]
+[2022-06-13 13:38:07,288] {subprocess.py:92} INFO - [0m13:38:07  6 of 6 OK hook: SAM.on-run-end.5 ............................................... [ALTER DEFAULT PRIVILEGES in 0.00s]
+[2022-06-13 13:38:07,288] {subprocess.py:92} INFO - [0m13:38:07
+[2022-06-13 13:38:07,290] {subprocess.py:92} INFO - [0m13:38:07
+[2022-06-13 13:38:07,290] {subprocess.py:92} INFO - [0m13:38:07  Finished running 1 table model, 1 view model, 6 hooks in 0.34s.
+[2022-06-13 13:38:07,295] {subprocess.py:92} INFO - [0m13:38:07
+[2022-06-13 13:38:07,296] {subprocess.py:92} INFO - [0m13:38:07  Completed successfully
+[2022-06-13 13:38:07,296] {subprocess.py:92} INFO - [0m13:38:07
+[2022-06-13 13:38:07,296] {subprocess.py:92} INFO - [0m13:38:07  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[2022-06-13 13:38:07,462] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-06-13 13:38:07,490] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=T-dbt-job-example, task_id=dbt_clone_and_transform-example, execution_date=20220613T113724, start_date=20220613T133725, end_date=20220613T133807
+[2022-06-13 13:38:07,528] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-13 13:38:07,554] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
