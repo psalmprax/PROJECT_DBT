@@ -24,8 +24,8 @@ $	Connection Id: target
 	Login: target
 	Password: target
 	Port: 5432
-	```
-	```bash
+```
+```bash
 $	Connection Id: source	
 	Connection Type: Postgres
 	Host: postgres_source
