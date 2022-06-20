@@ -36,8 +36,8 @@ using the postgres provider
 ```
 3) The Airflow dag has 4 jobs. Run the job in the order that they are listed below
 ```bash
-- T-dbt-job-cdc_load
-- T-dbt-job-objects 
-- T-dbt-job-dimensions
-- T-dbt-job-facts
+	- T-dbt-job-cdc_load
+	- T-dbt-job-objects 
+	- T-dbt-job-dimensions
+	- T-dbt-job-facts
 ```
