@@ -17,22 +17,22 @@ $ docker-compose up --build -d
 using the postgres provider
 
 ```bash
-Connection Id: target	
-Connection Type: Postgres
-Host: postgres_target
-Schema: target	
-Login: target
-Password: target
-Port: 5432
-```
-```bash
-Connection Id: source	
-Connection Type: Postgres
-Host: postgres_source
-Schema: source	
-Login: source
-Password: source
-Port: 5432
+	Connection Id: target	
+	Connection Type: Postgres
+	Host: postgres_target
+	Schema: target	
+	Login: target
+	Password: target
+	Port: 5432
+	```
+	```bash
+	Connection Id: source	
+	Connection Type: Postgres
+	Host: postgres_source
+	Schema: source	
+	Login: source
+	Password: source
+	Port: 5432
 ```
 3) The Airflow dag has 4 jobs. Run the job in the order that they are listed below
 ```bash
